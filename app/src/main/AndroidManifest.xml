@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FF_SDCI"
+        tools:targetApi="31">
+        <activity
+            android:name=".Dep2_Chatting"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Splash2"
+            android:exported="false" />
+        <activity
+            android:name=".Dep3_popularboard"
+            android:exported="false" />
+        <activity
+            android:name=".Dep3_ongoingvote"
+            android:exported="false" />
+        <activity
+            android:name=".Dep3_notice"
+            android:exported="false" />
+        <activity
+            android:name=".Dep_disturbtime2ut"
+            android:exported="false" />
+        <activity
+            android:name=".Dep3_disturbtime"
+            android:exported="false" />
+        <activity
+            android:name=".Dep3_CustomerService"
+            android:exported="false" />
+        <activity
+            android:name=".Dep3_chatiing"
+            android:exported="false" />
+        <activity
+            android:name=".Dep3_alarm"
+            android:exported="false" />
+        <activity
+            android:name=".Dep3_1on1ask"
+            android:exported="false" />
+        <activity
+            android:name=".Dep3_mycar"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.FF_SDCI">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

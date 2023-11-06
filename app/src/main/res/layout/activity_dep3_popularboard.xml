@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA"
+    tools:context=".Dep3_popularboard">
+
+    <View
+        android:id="@+id/Action_bar_sd"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/h_button_round"
+        android:backgroundTint="#BCBBBB"
+        android:fontFamily="@font/suitemedium"
+        />
+
+    <View
+        android:id="@+id/Action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/h_button_round"
+        android:backgroundTint="#758652"
+        android:fontFamily="@font/suitemedium"
+
+        android:textColor="#FFFFFF"
+        android:textSize="24dp" />
+
+    <View
+        android:id="@+id/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/h_backbutton" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/suitemedium"
+        android:text="인기 게시판"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+
+    <Button
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginLeft="350dp"
+        android:background="@drawable/h_writebutton"/>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="30dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="170dp"
+                android:layout_height="150dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="게시글 제목"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/suitemedium"
+                    android:textColor="#758652"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="#0D253C"
+                    android:fontFamily="@font/suitemedium"
+                    android:text="내용~"/>
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/h_thumbs"
+                    />
+                <TextView
+                    android:id="@+id/likesu"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="XXX"/>
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@drawable/h_clock"
+                    />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="110dp"
+                    android:text="XXX"/>
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="150dp"
+                    android:background="@drawable/h_bookmark"
+                    />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="3px"
+                android:background="#EBEBF0"
+                android:layout_marginTop="145dp" />
+            <RelativeLayout
+                android:layout_marginLeft="170dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/h_testimg"/>
+
+            </RelativeLayout>
+
+            <!-- 두번째 -->
+
+
+            <RelativeLayout
+                android:layout_marginTop="160dp"
+                android:layout_width="170dp"
+                android:layout_height="150dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="게시글 제목"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/suitemedium"
+                    android:textColor="#758652"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="#0D253C"
+                    android:fontFamily="@font/suitemedium"
+                    android:text="내용~"/>
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/h_thumbs"
+                    />
+                <TextView
+                    android:id="@+id/likesu2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="XXX"/>
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@drawable/h_clock"
+                    />
+
+                <TextView
+                    android:id="@+id/time2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="110dp"
+                    android:text="XXX"/>
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="150dp"
+                    android:background="@drawable/h_bookmark"
+                    />
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="3px"
+                android:background="#EBEBF0"
+                android:layout_marginTop="300dp" />
+            <RelativeLayout
+                android:layout_marginTop="160dp"
+                android:layout_marginLeft="170dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/h_testimg"/>
+
+            </RelativeLayout>
+
+            <!-- 세번째 -->
+            <RelativeLayout
+                android:layout_marginTop="320dp"
+                android:layout_width="170dp"
+                android:layout_height="150dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="게시글 제목"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/suitemedium"
+                    android:textColor="#758652"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="#0D253C"
+                    android:fontFamily="@font/suitemedium"
+                    android:text="내용~"/>
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/h_thumbs"
+                    />
+                <TextView
+                    android:id="@+id/likesu3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="XXX"/>
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@drawable/h_clock"
+                    />
+
+                <TextView
+                    android:id="@+id/time3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="110dp"
+                    android:text="XXX"/>
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="150dp"
+                    android:background="@drawable/h_bookmark"
+                    />
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="3px"
+                android:background="#EBEBF0"
+                android:layout_marginTop="460dp" />
+            <RelativeLayout
+                android:layout_marginTop="320dp"
+                android:layout_marginLeft="170dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/h_testimg"/>
+
+            </RelativeLayout>
+
+            <!-- 네번째 -->
+            <RelativeLayout
+                android:layout_marginTop="480dp"
+                android:layout_width="170dp"
+                android:layout_height="150dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="게시글 제목"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/suitemedium"
+                    android:textColor="#758652"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="#0D253C"
+                    android:fontFamily="@font/suitemedium"
+                    android:text="내용~"/>
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/h_thumbs"
+                    />
+                <TextView
+                    android:id="@+id/likesu4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="XXX"/>
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@drawable/h_clock"
+                    />
+
+                <TextView
+                    android:id="@+id/time4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="110dp"
+                    android:text="XXX"/>
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="150dp"
+                    android:background="@drawable/h_bookmark"
+                    />
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="3px"
+                android:background="#EBEBF0"
+                android:layout_marginTop="620dp" />
+            <RelativeLayout
+                android:layout_marginTop="480dp"
+                android:layout_marginLeft="170dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/h_testimg"/>
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+</RelativeLayout>
