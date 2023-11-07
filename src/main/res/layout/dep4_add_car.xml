@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/Action_bar_sd"
+        style="@style/ActionBarStyle"
+        />
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/j_backbutton"
+        android:backgroundTint="#FFFFFF"
+        />
+
+    <!-- 메뉴 텍스트 -->
+    <TextView
+        style="@style/MenuTextStyle"
+        android:text="차량 추가하기"
+        />
+
+    <include
+        layout="@layout/j_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/suitemedium"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"
+        android:text="입력 예시\nex. 123가 3456\n앞번호:123\n한글:가\n뒷번호:345"
+        android:textColor="#B9B9B9"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#758652"
+        android:textSize="24dp"
+        android:fontFamily="@font/suitemedium"
+        android:text="등록하기" />
+
+
+</RelativeLayout>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#fafafa">
+
+    <View
+        android:id="@+id/Action_bar_sd"
+        style="@style/ActionBarStyle"
+        />
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/j_backbutton"
+        android:backgroundTint="#FFFFFF"
+        />
+
+    <!-- 메뉴 텍스트 -->
+    <TextView
+        style="@style/MenuTextStyle"
+        android:text="인기게시판"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="70dp"
+        android:fillViewport="true"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/title_tv"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="제목입니다."
+            android:fontFamily="@font/suitemedium"
+            />
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#C9C9C9" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+            <TextView
+                android:id="@+id/p_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="익명"
+                android:textColor="#c9c9c9"
+                android:fontFamily="@font/suitemedium"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/p_reg_date"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_weight="1"
+                android:text="작성일"
+                android:textColor="#c9c9c9"
+                android:fontFamily="@font/suitemedium"/>
+            <ImageButton
+                android:id="@+id/p_point_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/j_tri_point_menu"
+                android:background="#FFFFFF"/>
+        </LinearLayout>
+            <TextView
+                android:id="@+id/content_tv"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="내용입니다."
+                android:fontFamily="@font/suitemedium"
+                android:layout_weight="1"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/p_thumbs"
+                    android:padding="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/j_thumbs"
+                    android:background="#FFFFFF"/>
+                <TextView
+                    android:id="@+id/p_thumbs_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="100"
+                    android:fontFamily="@font/suitemedium"
+                    android:layout_weight="1"/>
+
+                <ImageButton
+                    android:id="@+id/bookmark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/j_bookmark"
+                    android:background="#FFFFFF"/>
+
+
+            </LinearLayout>
+            <View
+
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#C9C9C9" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:padding="16dp"
+                    android:background="@drawable/j_avatar"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/comment_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:text="닉네임"
+                        android:layout_gravity="bottom"
+                        android:fontFamily="@font/suitemedium"
+                        />
+                    <TextView
+                        android:id="@+id/comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:text="댓글 내용"
+                        android:fontFamily="@font/suitemedium"
+                        />
+                    <TextView
+                        android:id="@+id/com_reg_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:text="작성시간"
+                        android:layout_gravity="bottom"
+                        android:textColor="#c9c9c9"
+                        android:fontFamily="@font/suitemedium"
+                        />
+                </LinearLayout>
+                <ImageButton
+                    android:id="@+id/com_thumbs"
+                    android:padding="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/j_thumbs"
+                    android:background="#fafafa"/>
+
+                <TextView
+                    android:id="@+id/com_thumbs_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/suitemedium"
+                    android:layout_gravity="center_vertical"
+                    android:text="100" />
+
+                <ImageButton
+                    android:id="@+id/com_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/j_tri_point_menu"
+                    android:background="#fafafa"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:background="#E8E8E8"
+                android:orientation="horizontal">
+                <View
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/j_reply"
+                   />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:padding="16dp"
+                    android:background="@drawable/j_avatar"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/re_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:text="닉네임"
+                        android:layout_gravity="bottom"
+                        android:fontFamily="@font/suitemedium"
+                        />
+                    <TextView
+                        android:id="@+id/re_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:text="댓글 내용"
+                        android:fontFamily="@font/suitemedium"
+                        />
+                    <TextView
+                        android:id="@+id/re_reg_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:text="작성시간"
+                        android:layout_gravity="bottom"
+                        android:textColor="#c9c9c9"
+                        android:fontFamily="@font/suitemedium"
+                        />
+                </LinearLayout>
+                <ImageButton
+                    android:id="@+id/re_thumbs"
+                    android:padding="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/j_thumbs"
+                    android:background="#E8E8E8"/>
+
+                <TextView
+                    android:id="@+id/re_thumbs_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/suitemedium"
+                    android:layout_gravity="center_vertical"
+                    android:text="100" />
+
+                <ImageButton
+                    android:id="@+id/re_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/j_tri_point_menu"
+                    android:background="#E8E8E8"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/comment_et"
+            android:layout_width="0dp"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:background="#eeeeee"
+            android:layout_weight="1"
+            android:hint="댓글 내용을 입력하세요"/>
+
+        <Button
+            android:id="@+id/reg_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:backgroundTint="#758652"
+            android:text="등록"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

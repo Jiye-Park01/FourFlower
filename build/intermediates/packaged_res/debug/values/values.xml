@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">FirstApp</string>
+    <string name="main_desc">
+        회원님의 소중한 정보 보호를 위해, 카카오계정의 현재 비밀번호를 확인해주세요
+    </string>
+    <string name="password_txt">비밀번호가 기억나지 않으세요?</string>
+    <style name="Base.Theme.FirstApp" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.FirstApp" parent="Base.Theme.FirstApp"/>
+</resources>
