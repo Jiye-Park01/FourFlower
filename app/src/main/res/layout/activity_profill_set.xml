@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#E8E7E1"
 
-    tools:context=".MainActivity">
+    tools:context=".ProfillSet">
 
     
     <!--상단바 -->
@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/profillSet"
-            android:text="< 프로필 관리"
+            android:text=" 프로필 관리"
             android:textColor="#FFFFFF"
             android:textSize="25dp"
             android:layout_marginTop="10dp"

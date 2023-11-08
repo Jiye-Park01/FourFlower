@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/wrote"
-            android:text="< 작성한 글"
+            android:text=" 작성한 글"
             android:textColor="#FFFFFF"
             android:textSize="25dp"
             android:layout_marginTop="10dp"

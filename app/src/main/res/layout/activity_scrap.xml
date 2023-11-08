@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E8E7E1"
-    tools:context=".MainActivity">
+    tools:context=".scrap">
 
 
     <!--상단바 -->
@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/wrote"
-            android:text="< 스크랩 관리"
+            android:text=" 스크랩 관리"
             android:textColor="#FFFFFF"
             android:textSize="25dp"
             android:layout_marginTop="10dp"
