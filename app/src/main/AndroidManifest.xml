@@ -13,12 +13,37 @@
         android:theme="@style/Theme.FF_SDCI"
         tools:targetApi="31">
         <activity
+            android:name=".Dep4_write"
+            android:exported="false" />
+        <activity
+            android:name=".Dep4_search_car"
+            android:exported="false" />
+        <activity
+            android:name=".Dep4_other_post"
+            android:exported="false" />
+        <activity
+            android:name=".Dep4_new_vote"
+            android:exported="false" />
+        <activity
+            android:name=".Dep4_my_post"
+            android:exported="false" />
+        <activity
+            android:name=".Dep4_add_car"
+            android:exported="false" />
+        <activity
+            android:name=".Dep3_secession"
+            android:exported="false" />
+        <activity
+            android:name=".Dep2_menu"
+            android:exported="false" />
+        <activity
             android:name=".Dep2_Chatting"
             android:exported="false" />
         <!--
         <activity
             android:name=".SplashActivity"
-            android:exported="true" /> -->
+            android:exported="true" />
+        -->
         <activity
             android:name=".Splash2"
             android:exported="false"

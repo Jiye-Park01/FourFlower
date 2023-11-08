@@ -34,15 +34,15 @@
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
         android:orientation="vertical">
-    <TextView
+        <TextView
 
-        android:layout_marginLeft="16dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="@id/Action_bar_sd"
-        android:text="탈퇴 사유 작성"
-        android:fontFamily="@font/suitemedium"
-        android:textSize="16dp"/>
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="@id/Action_bar_sd"
+            android:text="탈퇴 사유 작성"
+            android:fontFamily="@font/suitemedium"
+            android:textSize="16dp"/>
         <View
 
             android:layout_width="match_parent"
@@ -52,13 +52,13 @@
             android:layout_marginBottom="16dp"
             android:background="#C9C9C9" />
 
-    <EditText
-        android:id="@+id/secession_resion"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:gravity="center_horizontal"
-        android:hint="탈퇴 사유를 입력해주세요"
-        android:fontFamily="@font/suitemedium"/>
+        <EditText
+            android:id="@+id/secession_resion"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_horizontal"
+            android:hint="탈퇴 사유를 입력해주세요"
+            android:fontFamily="@font/suitemedium"/>
 
 
         <TextView

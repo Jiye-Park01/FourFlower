@@ -40,15 +40,15 @@
             android:orientation="vertical">
             <!--제목입력-->
 
-                <EditText
-                    android:id="@+id/title_et"
-                    android:padding="16dp"
-                    android:background="#eeeeee"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="제목을 입력하세요."
-                    android:fontFamily="@font/suitemedium"
-                    />
+            <EditText
+                android:id="@+id/title_et"
+                android:padding="16dp"
+                android:background="#eeeeee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="제목을 입력하세요."
+                android:fontFamily="@font/suitemedium"
+                />
 
 
             <View
@@ -87,7 +87,7 @@
             android:background="@drawable/j_camera"
             android:backgroundTint="#000000"
             android:gravity="bottom"
-        />
+            />
 
         <View
             android:layout_width="0dp"
@@ -104,6 +104,6 @@
             android:background="@drawable/j_done"
             android:backgroundTint="#000000"
             android:gravity="bottom"
-        />
+            />
     </LinearLayout>
 </LinearLayout>
