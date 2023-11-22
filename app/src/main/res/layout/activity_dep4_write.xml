@@ -60,6 +60,7 @@
                 android:layout_marginBottom="8dp"
                 android:background="#C9C9C9" />
             <!--내용 입력-->
+
             <EditText
                 android:id="@+id/content_et"
                 android:layout_width="match_parent"
@@ -79,14 +80,14 @@
         android:orientation="horizontal">
         <!--카메라-->
 
-        <android.widget.Button
-            android:id="@+id/btn_photo"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginTop="20dp"
+        <ImageButton
+            android:id="@+id/photo_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:background="@drawable/j_camera"
             android:backgroundTint="#000000"
             android:gravity="bottom"
+            android:contentDescription="하고 싶은 설명"
             />
 
         <View
@@ -95,15 +96,14 @@
             android:layout_weight="1" />
         <!--등록버튼-->
 
-        <android.widget.Button
-            android:id="@+id/btn_reg"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+        <ImageButton
+            android:id="@+id/reg_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="20dp"
             android:background="@drawable/j_done"
             android:backgroundTint="#000000"
             android:gravity="bottom"
-            />
+            android:contentDescription="하고 싶은 설명"/>
     </LinearLayout>
 </LinearLayout>
