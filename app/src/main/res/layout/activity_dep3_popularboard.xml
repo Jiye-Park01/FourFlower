@@ -50,7 +50,17 @@
         android:textColor="#FFFFFF"
         android:textSize="30dp" />
 
+<<<<<<< HEAD
 
+=======
+    <Button
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginLeft="350dp"
+        android:background="@drawable/h_writebutton"
+        android:contentDescription="하고 싶은 설명"/>
+>>>>>>> 2a332563b903441c8245306123582c8d24cf5a93
 
     <ScrollView
         android:id="@+id/scroll"
@@ -71,6 +81,7 @@
 
 
     </ScrollView>
+<<<<<<< HEAD
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/write_button"
         android:layout_width="56dp"
@@ -84,6 +95,8 @@
         android:contentDescription="하고 싶은 설명"
         />
 
+=======
+>>>>>>> 2a332563b903441c8245306123582c8d24cf5a93
 
 
 </RelativeLayout>

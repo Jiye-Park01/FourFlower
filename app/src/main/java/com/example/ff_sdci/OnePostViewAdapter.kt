@@ -24,14 +24,25 @@ class OnePostViewAdapter (val itemList: ArrayList<OnePostView>) : RecyclerView.A
     override fun onBindViewHolder(holder: CustomViewHolder, position: Int) {
         holder.title_f.text = itemList[position].title_f
         holder.content_f.text = itemList[position].content_f
+<<<<<<< HEAD
         holder.like_image.setImageResource(itemList.get(position).like_image)
         holder.time_image.setImageResource(itemList.get(position).time_image)
+=======
+        holder.like_image.setImageResource(itemList[position].like_image)
+        holder.time_image.setImageResource(itemList[position].time_image)
+>>>>>>> 2a332563b903441c8245306123582c8d24cf5a93
         holder.like_count.text = itemList[position].like_count.toString()
         val simpleDateFormat = SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
         val formattedTime = simpleDateFormat.format(Date(itemList[position].write_time))
         holder.write_time.text = formattedTime
+<<<<<<< HEAD
         holder.bookmark.setImageResource(itemList.get(position).bookmark)
         holder.post_image.setImageResource(itemList.get(position).post_image)
+=======
+
+        holder.bookmark.setImageResource(itemList[position].bookmark)
+        holder.post_image.setImageResource(itemList[position].post_image)
+>>>>>>> 2a332563b903441c8245306123582c8d24cf5a93
 
     }
 
@@ -43,8 +54,13 @@ class OnePostViewAdapter (val itemList: ArrayList<OnePostView>) : RecyclerView.A
         val title_f = itemView.findViewById<TextView>(R.id.title_f)
         val content_f = itemView.findViewById<TextView>(R.id.content_f)
         val like_image = itemView.findViewById<ImageView>(R.id.like_f)
+<<<<<<< HEAD
         val time_image = itemView.findViewById<ImageView>(R.id.time_f)
         val like_count = itemView.findViewById<TextView>(R.id.like_count)
+=======
+        val like_count = itemView.findViewById<TextView>(R.id.like_count)
+        val time_image = itemView.findViewById<ImageView>(R.id.time_f)
+>>>>>>> 2a332563b903441c8245306123582c8d24cf5a93
         val write_time = itemView.findViewById<TextView>(R.id.timeline)
         val bookmark = itemView.findViewById<ImageView>(R.id.bookmark)
         val post_image = itemView.findViewById<ImageView>(R.id.post_image)

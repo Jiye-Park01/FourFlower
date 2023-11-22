@@ -12,7 +12,11 @@
         </deviceKey>
       </Target>
     </targetSelectedWithDropDown>
+<<<<<<< HEAD
     <timeTargetWasSelectedWithDropDown value="2023-11-20T01:44:01.914509800Z" />
+=======
+    <timeTargetWasSelectedWithDropDown value="2023-11-10T12:16:15.577302500Z" />
+>>>>>>> 2a332563b903441c8245306123582c8d24cf5a93
     <targetsSelectedWithDialog>
       <Target>
         <type value="QUICK_BOOT_TARGET" />

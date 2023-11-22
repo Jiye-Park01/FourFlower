@@ -14,8 +14,7 @@
 
         android:background="@drawable/h_button_round"
         android:backgroundTint="#BCBBBB"
-        android:fontFamily="@font/suitemedium"
-        />
+        android:fontFamily="@font/suitemedium" />
 
 
 

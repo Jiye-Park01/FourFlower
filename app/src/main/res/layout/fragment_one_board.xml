@@ -37,11 +37,18 @@
             />
         <TextView
             android:id="@+id/like_count"
+<<<<<<< HEAD
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_marginTop="100dp"
             android:layout_marginLeft="40dp"
             android:textColor="#0D253C"
+=======
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="40dp"
+>>>>>>> 2a332563b903441c8245306123582c8d24cf5a93
             android:text="XXX"/>
 
         <ImageView
@@ -55,6 +62,7 @@
 
         <TextView
             android:id="@+id/timeline"
+<<<<<<< HEAD
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_marginTop="100dp"
@@ -63,6 +71,14 @@
             android:text="XXX"/>
         <ImageView
             android:id="@+id/bookmark"
+=======
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="110dp"
+            android:text="XXX"/>
+        <ImageView
+>>>>>>> 2a332563b903441c8245306123582c8d24cf5a93
             android:layout_width="15dp"
             android:layout_height="20dp"
             android:layout_marginTop="100dp"
@@ -82,7 +98,11 @@
         android:layout_marginTop="140dp" />
     <RelativeLayout
         android:layout_marginLeft="170dp"
+<<<<<<< HEAD
         android:layout_width="wrap_content"
+=======
+        android:layout_width="match_parent"
+>>>>>>> 2a332563b903441c8245306123582c8d24cf5a93
         android:layout_height="150dp">
         <ImageView
             android:id="@+id/post_image"
