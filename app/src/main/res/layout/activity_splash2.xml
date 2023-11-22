@@ -21,8 +21,8 @@
         android:lineSpacingExtra="-12sp" />
 
 
-    <View
-        android:id="@+id/Action_bar"
+    <Button
+        android:id="@+id/NaverLogin"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_marginTop="430dp"
@@ -31,27 +31,15 @@
         android:fontFamily="@font/suitemedium"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-
-        android:textColor="#FFFFFF"
-        android:textSize="24dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/Action_bar"
-        android:layout_alignBottom="@+id/Action_bar"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="90dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="@font/suitemedium"
         android:text="네이버로 로그인"
         android:textColor="#FFFFFF"
         android:textSize="30dp" />
 
+
+
     <!-- ID로 로그인 -->
 
-    <View
+    <Button
         android:id="@+id/IDLogin"
         android:layout_width="match_parent"
         android:layout_height="70dp"
@@ -61,27 +49,16 @@
         android:fontFamily="@font/suitemedium"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-
-        android:textColor="#FFFFFF"
-        android:textSize="24dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/IDLogin"
-        android:layout_alignBottom="@+id/IDLogin"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="90dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="@font/suitemedium"
         android:text="ID로 로그인"
         android:textColor="#FFFFFF"
         android:textSize="30dp" />
 
+
+
+
     <!--회원가입 -->
 
-    <View
+    <Button
         android:id="@+id/SignUp"
         android:layout_width="match_parent"
         android:layout_height="70dp"
@@ -91,23 +68,11 @@
         android:fontFamily="@font/suitemedium"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-
-        android:textColor="#FFFFFF"
-        android:textSize="24dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/SignUp"
-        android:layout_alignBottom="@+id/SignUp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="90dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="@font/suitemedium"
         android:text="회원가입"
         android:textColor="#FFFFFF"
         android:textSize="30dp" />
+
+
 
 
 
