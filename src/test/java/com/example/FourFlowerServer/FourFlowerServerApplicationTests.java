@@ -12,8 +12,8 @@ class FourFlowerServerApplicationTests {
 
 	private static final String DRIVER = "com.mysql.jdbc.Driver";
 	private static final String URL = "jdbc:mysql://localhost:3306/fourflowersdb?useSSL=false&serverTimezone=Asia/Seoul";
-	private static final String USER = "mxxxdxxx";
-	private static final String PASSWORD = "1234";
+	private static final String USER = "jiye";
+	private static final String PASSWORD = "0000";
 
 
 	@Test

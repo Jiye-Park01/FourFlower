@@ -13,7 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 public class TestController {
 
-    private final TestService testService;
+    private TestService testService;     //private final TestService testService;
 
     @GetMapping(value = "api/test")
     public String test() {
