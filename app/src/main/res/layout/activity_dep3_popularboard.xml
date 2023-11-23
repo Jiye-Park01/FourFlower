@@ -50,7 +50,7 @@
         android:textColor="#FFFFFF"
         android:textSize="30dp" />
 
-<<<<<<< HEAD
+
 
 =======
     <Button
@@ -60,7 +60,7 @@
         android:layout_marginLeft="350dp"
         android:background="@drawable/h_writebutton"
         android:contentDescription="하고 싶은 설명"/>
->>>>>>> 2a332563b903441c8245306123582c8d24cf5a93
+
 
     <ScrollView
         android:id="@+id/scroll"
