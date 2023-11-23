@@ -1,11 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.front" android:required="false" />
+
 
     <!-- 방해금지 모드를 구현하기 위한 -->
     <uses-permission android:name="android.permission.SET_ALARM" />
     <uses-permission android:name="android.permission.INTERNET" />
 
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
 
     <application
 
@@ -21,24 +46,78 @@
         android:theme="@style/Theme.FF_SDCI"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
+            android:name=".NaviActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Dep1_Home"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Dep1_Home"
+            android:exported="false" />
+=======
+<<<<<<< HEAD
+            android:name=".Dep4_write"
+            android:exported="false"
+            />
+>>>>>>> 2a332563b903441c8245306123582c8d24cf5a93
+        <activity
+            android:name=".Dep4_search_car"
+            android:exported="false" />
+        <activity
+            android:name=".Dep4_other_post"
+            android:exported="false" />
+        <activity
+            android:name=".Dep4_new_vote"
+            android:exported="false" />
+        <activity
+            android:name=".Dep4_my_post"
+            android:exported="false" />
+        <activity
+            android:name=".Dep4_add_car"
+            android:exported="false" />
+        <activity
+            android:name=".Dep3_secession"
+            android:exported="false" />
+        <activity
+            android:name=".Dep2_menu"
+            android:exported="false" />
+=======
             android:name=".LoginActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat" />
+>>>>>>> 8971bc8ed74fa1e8b67cae3ddde3876c089d56ec
         <activity
             android:name=".Dep2_Chatting"
             android:exported="false" />
-        <!--
+<<<<<<< HEAD
+=======
         <activity
             android:name=".SplashActivity"
-            android:exported="true" />
-        -->
+            android:exported="false" />
         <activity
             android:name=".Splash2"
-            android:exported="false"
-            android:theme="@style/Theme.AppCompat" />
-        <activity
-            android:name=".Dep3_popularboard"
             android:exported="false" />
+        <!--
+>>>>>>> 2a332563b903441c8245306123582c8d24cf5a93
+        <activity
+<<<<<<< HEAD
+=======
+            android:name=".SplashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Splash2"
+            android:exported="false" />
+        <!--
+        <activity
+>>>>>>> 8971bc8ed74fa1e8b67cae3ddde3876c089d56ec
+            android:name=".Dep3_popularboard"
+            android:exported="true" />
+<<<<<<< HEAD
+        -->
+=======
+            -->
+>>>>>>> 2a332563b903441c8245306123582c8d24cf5a93
         <activity
             android:name=".Dep3_ongoingvote"
             android:exported="false" />
@@ -67,7 +146,7 @@
             android:name=".Dep3_mycar"
             android:exported="false" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".Dep3_popularboard"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.AppCompat">
