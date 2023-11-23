@@ -4,9 +4,13 @@
 
     <!-- 방해금지 모드를 구현하기 위한 -->
     <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
 
     <application
+
+        android:networkSecurityConfig="@xml/network_security_config"
+
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
