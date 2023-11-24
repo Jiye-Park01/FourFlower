@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
+import android.widget.RelativeLayout
 import android.widget.Toast
 import com.example.ff_sdci.Dep2.Dep2_Chatting
 import com.example.ff_sdci.Dep2.Dep2_Mypage
@@ -55,6 +56,14 @@ class Dep1_Home : AppCompatActivity() {
             }
          // 방해금지모드 버튼을 눌렀을 때 방해금지모드 설정으로 이동
 
+        // 인기 게시판을 눌렀을 때 인기 게시판으로 이동
+            val popularBoard=findViewById<RelativeLayout>(R.id.popular_board_)
+            popularBoard.setOnClickListener {
+                Toast.makeText(this,"인기 게시판으로 이동",Toast.LENGTH_SHORT).show()
+                val intent= Intent(this,Dep3_popularboard::class.java)
+                startActivity(intent)
+
+            }
 
 
 

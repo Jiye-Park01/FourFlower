@@ -38,6 +38,7 @@
         android:required="false" />
 
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -54,6 +55,7 @@
             android:exported="false" />
         <activity
             android:name=".join_membership"
+            android:theme="@style/Theme.AppCompat"
             android:exported="false" />
         <activity
             android:name=".Dep2.Dep2_Mypage"
@@ -112,6 +114,7 @@
             android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".Dep3_popularboard"
+            android:theme="@style/Theme.AppCompat"
             android:exported="false" />
         <activity android:name="com.example.fourflower.your_wrote"
             android:theme="@style/Theme.AppCompat"
