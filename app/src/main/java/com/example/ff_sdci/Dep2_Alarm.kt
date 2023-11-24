@@ -78,12 +78,3 @@ class Dep2_Alarm : AppCompatActivity(), View.OnClickListener {
 
 
 
-=======
-
-class Dep2_Alarm : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_dep2_alarm)
-    }
-}
->>>>>>> a9bb7d27ec5610221ef982b63438ef9381004895
