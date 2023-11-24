@@ -1,6 +1,14 @@
 package com.example.ff_sdci
 
 import android.os.Bundle
+<<<<<<< HEAD
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+
+class Dep2_Alarm_Frag1 : Fragment() {
+=======
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -28,6 +36,7 @@ class Dep2_Alarm_Frag1 : Fragment() {
             param2 = it.getString(ARG_PARAM2)
         }
     }
+>>>>>>> a9bb7d27ec5610221ef982b63438ef9381004895
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -36,6 +45,8 @@ class Dep2_Alarm_Frag1 : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_dep2__alarm__frag1, container, false)
     }
+<<<<<<< HEAD
+=======
 
     companion object {
         /**
@@ -56,4 +67,5 @@ class Dep2_Alarm_Frag1 : Fragment() {
                 }
             }
     }
+>>>>>>> a9bb7d27ec5610221ef982b63438ef9381004895
 }

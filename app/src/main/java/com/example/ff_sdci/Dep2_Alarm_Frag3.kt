@@ -1,14 +1,6 @@
 package com.example.ff_sdci
 
 import android.os.Bundle
-<<<<<<< HEAD
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-
-class Dep2_Alarm_Frag2 : Fragment() {
-=======
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -21,10 +13,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [Dep2_Alarm_Frag2.newInstance] factory method to
+ * Use the [Dep2_Alarm_Frag3.newInstance] factory method to
  * create an instance of this fragment.
  */
-class Dep2_Alarm_Frag2 : Fragment() {
+class Dep2_Alarm_Frag3 : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -36,17 +28,13 @@ class Dep2_Alarm_Frag2 : Fragment() {
             param2 = it.getString(ARG_PARAM2)
         }
     }
->>>>>>> a9bb7d27ec5610221ef982b63438ef9381004895
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-<<<<<<< HEAD
-        return inflater.inflate(R.layout.fragment_dep2__alarm__frag1, container, false)
-=======
-        return inflater.inflate(R.layout.fragment_dep2__alarm__frag2, container, false)
+        return inflater.inflate(R.layout.fragment_dep2__alarm__frag3, container, false)
     }
 
     companion object {
@@ -56,17 +44,16 @@ class Dep2_Alarm_Frag2 : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment Dep2_Alarm_Frag2.
+         * @return A new instance of fragment Dep2_Alarm_Frag3.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            Dep2_Alarm_Frag2().apply {
+            Dep2_Alarm_Frag3().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
                 }
             }
->>>>>>> a9bb7d27ec5610221ef982b63438ef9381004895
     }
 }

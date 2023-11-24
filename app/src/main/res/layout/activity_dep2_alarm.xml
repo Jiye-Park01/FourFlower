@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+=======
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> aa9b7b308e0200b2c8f8fd1c2198305e7e5d9f1e
+=======
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> a9bb7d27ec5610221ef982b63438ef9381004895
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -56,7 +65,14 @@
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
         android:background="#0000FF"
+>>>>>>> aa9b7b308e0200b2c8f8fd1c2198305e7e5d9f1e
+=======
+        android:background="#0000FF"
+>>>>>>> a9bb7d27ec5610221ef982b63438ef9381004895
         android:layout_marginTop="75dp"/>
 
     <LinearLayout
@@ -64,30 +80,74 @@
         android:layout_height="60dp"
         android:orientation="horizontal"
         android:layout_marginTop="80dp"
+<<<<<<< HEAD
+<<<<<<< HEAD
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/bt_all"
+=======
+=======
+>>>>>>> a9bb7d27ec5610221ef982b63438ef9381004895
         android:background="#FF0000"
         android:id="@+id/linearLayout">
 
         <Button
+<<<<<<< HEAD
+>>>>>>> aa9b7b308e0200b2c8f8fd1c2198305e7e5d9f1e
+=======
+>>>>>>> a9bb7d27ec5610221ef982b63438ef9381004895
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="전체"/>
         <Button
+<<<<<<< HEAD
+<<<<<<< HEAD
+            android:id="@+id/bt_board"
+=======
+>>>>>>> aa9b7b308e0200b2c8f8fd1c2198305e7e5d9f1e
+=======
+>>>>>>> a9bb7d27ec5610221ef982b63438ef9381004895
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="게시판"/>
         <Button
+<<<<<<< HEAD
+<<<<<<< HEAD
+            android:id="@+id/bt_vote"
+=======
+>>>>>>> aa9b7b308e0200b2c8f8fd1c2198305e7e5d9f1e
+=======
+>>>>>>> a9bb7d27ec5610221ef982b63438ef9381004895
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="투표" />
         <Button
+<<<<<<< HEAD
+<<<<<<< HEAD
+            android:id="@+id/bt_distrupt"
+=======
+>>>>>>> aa9b7b308e0200b2c8f8fd1c2198305e7e5d9f1e
+=======
+>>>>>>> a9bb7d27ec5610221ef982b63438ef9381004895
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="방해금지" />
 
     </LinearLayout>
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+
+
+</RelativeLayout>
+
+=======
+=======
+>>>>>>> a9bb7d27ec5610221ef982b63438ef9381004895
      <RelativeLayout
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
@@ -115,6 +175,10 @@
          </ScrollView>
 
      </RelativeLayout>
+<<<<<<< HEAD
+>>>>>>> aa9b7b308e0200b2c8f8fd1c2198305e7e5d9f1e
+=======
+>>>>>>> a9bb7d27ec5610221ef982b63438ef9381004895
 
 
 
@@ -124,4 +188,11 @@
 
 
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 </RelativeLayout>
+>>>>>>> aa9b7b308e0200b2c8f8fd1c2198305e7e5d9f1e
+=======
+</RelativeLayout>
+>>>>>>> a9bb7d27ec5610221ef982b63438ef9381004895
