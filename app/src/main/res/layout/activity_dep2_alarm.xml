@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<<<<<<< HEAD
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-=======
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 >>>>>>> aa9b7b308e0200b2c8f8fd1c2198305e7e5d9f1e
 =======
