@@ -3,13 +3,11 @@ package com.example.ff_sdci
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
 import com.example.ff_sdci.Dep2.Dep2_Chatting
+import com.example.ff_sdci.Dep2.Dep2_Mypage
 import com.example.ff_sdci.Dep2.Dep2_menu
-import com.example.fourflower.ProfillSet
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class Dep1_Home : AppCompatActivity() {
@@ -40,7 +38,7 @@ class Dep1_Home : AppCompatActivity() {
                 }
                 R.id.item_profile -> {
                     // item_menu를 클릭했을 때 마이페이지로 이동
-                    val intent =Intent(this@Dep1_Home, ProfillSet::class.java)
+                    val intent =Intent(this@Dep1_Home, Dep2_Mypage::class.java)
                     startActivity(intent)
                     true
                 }

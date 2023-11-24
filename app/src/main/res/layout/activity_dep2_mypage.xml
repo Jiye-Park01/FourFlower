@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Dep2_Mypage">
+    tools:context=".Dep2.Dep2_Mypage">
 
     <View
         android:id="@+id/Action_bar_sd"
@@ -95,176 +95,431 @@
         </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/layout_1"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_below="@+id/lay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:orientation="vertical">
-
+    <ScrollView
+        android:id="@+id/bio_scroll"
+        android:layout_width="match_parent"
+        android:layout_below="@id/lay"
+        android:layout_height="500dp"
+        android:fillViewport="true"
+        android:layout_marginBottom="0dp">
+    <RelativeLayout
+        android:layout_below="@id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <LinearLayout
+            android:id="@+id/layout_1"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_below="@+id/lay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp">
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical">
 
 
-
-            <TextView
-
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:text="내 정보"
-                android:textSize="24dp"
-                android:layout_marginLeft="25dp"
-                android:fontFamily="@font/suitemedium" />
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="내 정보"
+                    android:textSize="24dp"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/suitemedium" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/profile"
+                android:layout_width="328dp"
+                android:layout_height="50dp"
+                android:background="@drawable/j_round_bottom"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_centerVertical="true"
+                    android:text="프로필 관리"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/suitemedium"
+                    android:textColor="#000000" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <Button
+                    android:id="@+id/btn_profile"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/j_live_area"
+                    android:backgroundTint="#BCBBBB" />
+
+            </LinearLayout>
+
+
         </LinearLayout>
 
-
         <LinearLayout
-            android:id="@+id/profile"
-            android:layout_width="328dp"
-            android:layout_height="50dp"
-            android:background="@drawable/j_round_bottom"
-            >
-            <TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:id="@+id/layout_2"
+            android:layout_below="@+id/layout_1"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical">
+
+            <!-- 방해금지 상단 -->
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="7dp"
-                android:layout_centerVertical="true"
-                android:text="프로필 관리"
-                android:textSize="20dp"
-                android:layout_marginLeft="25dp"
-                android:fontFamily="@font/suitemedium"
-                android:textColor="#000000" />
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
-            <Button
-                android:id="@+id/btn_profile"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="7dp"
-                android:background="@drawable/j_live_area"
-                android:backgroundTint="#BCBBBB" />
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="나의 글"
+                    android:textSize="24dp"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/suitemedium" />
+            </LinearLayout>
+
+            <!--방해금지시간설정-->
+            <LinearLayout
+                android:id="@+id/my_write"
+                android:layout_width="328dp"
+                android:layout_height="50dp"
+                android:background="@drawable/j_round_bottom"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_centerVertical="true"
+                    android:text="작성한 글"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/suitemedium"
+                    android:textColor="#000000" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <Button
+                    android:id="@+id/btn_set_time"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/j_live_area"
+                    android:backgroundTint="#BCBBBB" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/scrap"
+                android:layout_width="328dp"
+                android:layout_height="50dp"
+                android:background="@drawable/j_round_bottom"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_centerVertical="true"
+                    android:text="스크랩한 글"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/suitemedium"
+                    android:textColor="#000000" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <Button
+                    android:id="@+id/scrapbutton"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/j_live_area"
+                    android:backgroundTint="#BCBBBB" />
+
+
+            </LinearLayout>
 
         </LinearLayout>
 
-
-        </LinearLayout>
-
-
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="wrap_content"
-        android:layout_below="@+id/layout_1"
-        android:layout_marginTop="50dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:orientation="vertical">
-
-        <!-- 방해금지 상단 -->
         <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp">
+            android:layout_below="@+id/layout_2"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical">
 
-            <TextView
-
+            <LinearLayout
+                android:id="@+id/layout_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:text="나의 글"
-                android:textSize="24dp"
-                android:layout_marginLeft="25dp"
-                android:fontFamily="@font/suitemedium" />
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="설정"
+                    android:textSize="24dp"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/suitemedium" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_3"
+                android:layout_width="328dp"
+                android:layout_height="50dp"
+                android:background="@drawable/j_round_bottom"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_centerVertical="true"
+                    android:text="알림"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/suitemedium"
+                    android:textColor="#000000" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <Button
+                    android:id="@+id/AlarmButton"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/j_live_area"
+                    android:backgroundTint="#BCBBBB" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/distrupt_2"
+                android:layout_width="328dp"
+                android:layout_height="50dp"
+                android:background="@drawable/j_round_bottom"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_centerVertical="true"
+                    android:text="다크모드"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/suitemedium"
+                    android:textColor="#000000" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <Button
+                    android:id="@+id/btn_check_time"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/j_live_area"
+                    android:backgroundTint="#BCBBBB" />
+
+
+            </LinearLayout>
+
         </LinearLayout>
 
-        <!--방해금지시간설정-->
         <LinearLayout
-            android:id="@+id/distrupt_1"
-            android:layout_width="328dp"
-            android:layout_height="50dp"
-            android:background="@drawable/j_round_bottom"
-            >
-            <TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="430dp"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="7dp"
-                android:layout_centerVertical="true"
-                android:text="방해금지 시간 설정"
-                android:textSize="20dp"
-                android:layout_marginLeft="25dp"
-                android:fontFamily="@font/suitemedium"
-                android:textColor="#000000" />
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
-            <Button
-                android:id="@+id/btn_set_time"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="7dp"
-                android:background="@drawable/j_live_area"
-                android:backgroundTint="#BCBBBB" />
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="고객센터"
+                    android:textSize="24dp"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/suitemedium" />
+            </LinearLayout>
+
+            <!--방해금지시간설정-->
+            <LinearLayout
+                android:id="@+id/FAQ"
+                android:layout_width="328dp"
+                android:layout_height="50dp"
+                android:background="@drawable/j_round_bottom"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_centerVertical="true"
+                    android:text="FAQ"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/suitemedium"
+                    android:textColor="#000000" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <Button
+                    android:id="@+id/distrupt_timeButton"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/j_live_area"
+                    android:backgroundTint="#BCBBBB" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Notice"
+                android:layout_width="328dp"
+                android:layout_height="50dp"
+                android:background="@drawable/j_round_bottom"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_centerVertical="true"
+                    android:text="공지사항"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/suitemedium"
+                    android:textColor="#000000" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <Button
+                    android:id="@+id/distruptTime_2utButton"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/j_live_area"
+                    android:backgroundTint="#BCBBBB" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/on1_1"
+                android:layout_width="328dp"
+                android:layout_height="50dp"
+                android:background="@drawable/j_round_bottom"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_centerVertical="true"
+                    android:text="1:1 문의"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/suitemedium"
+                    android:textColor="#000000" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <Button
+                    android:id="@+id/on1_1_Button"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/j_live_area"
+                    android:backgroundTint="#BCBBBB" />
+
+
+            </LinearLayout>
+
+
+
 
         </LinearLayout>
 
+    </RelativeLayout>
 
-        <!--이웃의 방해금지시간-->
-        <LinearLayout
-            android:id="@+id/distrupt_2"
-            android:layout_width="328dp"
-            android:layout_height="50dp"
-            android:background="@drawable/j_round_bottom"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="7dp"
-                android:layout_centerVertical="true"
-                android:text="이웃의 방해금지 시간"
-                android:textSize="20dp"
-                android:layout_marginLeft="25dp"
-                android:fontFamily="@font/suitemedium"
-                android:textColor="#000000" />
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
-            <Button
-                android:id="@+id/btn_check_time"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="7dp"
-                android:background="@drawable/j_live_area"
-                android:backgroundTint="#BCBBBB" />
-
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-
-
-
-
-
-
-
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="start"
+        android:background="#FFFFFF"
+        app:itemIconTint="@drawable/j_menu_selector_color"
+        app:itemTextColor="@drawable/j_menu_selector_color"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_navigation"
+        android:layout_alignParentBottom="true"
+        tools:layout_editor_absoluteX="0dp" />
 
 
 </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

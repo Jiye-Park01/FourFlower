@@ -50,6 +50,8 @@
         android:textColor="#FFFFFF"
         android:textSize="30dp" />
 
+    <!-- 여기까지가 상단바 -->
+
     <EditText
         android:id="@+id/title"
         android:layout_width="match_parent"
