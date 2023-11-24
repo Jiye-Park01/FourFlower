@@ -1,0 +1,47 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <View
+        android:id="@+id/Action_bar_sd"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/j_button_round"
+        android:backgroundTint="#BCBBBB"/>
+
+    <View
+        android:id="@+id/Action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:background="@drawable/j_button_round"
+        android:backgroundTint="#758652"
+        android:fontFamily="@font/suitemedium"
+
+        android:textColor="#FFFFFF"
+        android:textSize="24dp" />
+    <View
+        android:id="@+id/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/j_backbutton"
+        android:backgroundTint="@color/material_dynamic_neutral100"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/suitemedium"
+        android:text="메뉴"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+
+
+
+</RelativeLayout>

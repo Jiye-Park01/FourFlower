@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA"
+    tools:context=".dep3_ongoingvote">
+
+    <View
+        android:id="@+id/Action_bar_sd"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+
+        android:background="@drawable/h_button_round"
+        android:backgroundTint="#BCBBBB"
+        android:fontFamily="@font/suitemedium"
+        />
+
+    <View
+        android:id="@+id/Action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:background="@drawable/h_button_round"
+        android:backgroundTint="#758652"
+        android:fontFamily="@font/suitemedium"
+
+        android:textColor="#FFFFFF"
+        android:textSize="24dp" />
+
+    <View
+        android:id="@+id/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/h_backbutton" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/suitemedium"
+        android:text="진행 중인 전자 투표"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+
+    <View
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:background="@drawable/h_pinset"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="중요"
+        android:textSize="20dp"
+        android:fontFamily="@font/suitemedium"
+        android:layout_marginTop="103dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="44dp"/>
+
+    <Button
+        android:id="@+id/Buttonchange"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/h_reversetri"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="105dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="등록순/마감임박순"
+        android:fontFamily="@font/suitemedium"
+        android:layout_marginTop="103dp"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginLeft="245dp"/>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="30dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/h_button_round"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/suitemedium"
+                android:text="DAY-X (~20YY.YY.YY)
+                                    어떤 투표인지 내용 입력하는 부분"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/h_switch_track_on"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="250dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="투표하기"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="262dp"
+                android:fontFamily="@font/suitemedium"
+                android:layout_marginTop="25dp"/>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="95dp"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/h_button_round"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="110dp"
+
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/suitemedium"
+                android:text="DAY-X (~20YY.YY.YY)
+                                    어떤 투표인지 내용 입력하는 부분"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/h_switch_track_on"
+                android:layout_marginTop="115dp"
+                android:layout_marginLeft="250dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="투표하기"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="262dp"
+                android:fontFamily="@font/suitemedium"
+                android:layout_marginTop="120dp"/>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="190dp"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/h_button_round"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="205dp"
+
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/suitemedium"
+                android:text="DAY-X (~20YY.YY.YY)
+                                    어떤 투표인지 내용 입력하는 부분"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/h_switch_track_on"
+                android:layout_marginTop="210dp"
+                android:layout_marginLeft="250dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="투표하기"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="262dp"
+                android:fontFamily="@font/suitemedium"
+                android:layout_marginTop="215dp"/>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="285dp"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/h_button_round"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="300dp"
+
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/suitemedium"
+                android:text="DAY-X (~20YY.YY.YY)
+                                    어떤 투표인지 내용 입력하는 부분"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/h_switch_track_on"
+                android:layout_marginTop="305dp"
+                android:layout_marginLeft="250dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="투표하기"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="262dp"
+                android:fontFamily="@font/suitemedium"
+                android:layout_marginTop="310dp"/>
+
+
+            <View
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:background="@drawable/h_switch_thumb"
+                android:layout_marginLeft="290dp"
+                android:layout_marginTop="510dp"
+                android:elevation="-10dp"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="50dp"
+                android:textColor="#758652"
+                android:layout_marginLeft="298dp"
+                android:fontFamily="@font/suitemedium"
+                android:layout_marginTop="505dp"/>
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+</RelativeLayout>

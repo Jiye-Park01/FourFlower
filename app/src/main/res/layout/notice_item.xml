@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#758652"
+        android:textSize="16sp"
+        android:fontFamily="@font/suitemedium"
+        android:text="공지의 제목이 들어갑니다" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/suitemedium"
+        android:text="글의 내용이 들어감"/>
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:textColor="#0D253C"
+        android:textSize="10sp"
+        android:text="X:XX" />
+
+    <ImageView
+        android:id="@+id/bookmarkImageView"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="60dp"
+        android:src="@drawable/h_bookmark" />
+
+    <ImageView
+        android:id="@+id/clock"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/h_clock" />
+</RelativeLayout>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".Dep3_alarm">
+
+    <View
+        android:id="@+id/Action_bar_sd"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+
+        android:background="@drawable/h_button_round"
+        android:backgroundTint="#BCBBBB"
+        android:fontFamily="@font/suitemedium" />
+
+
+
+    <View
+        android:id="@+id/Action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:background="@drawable/h_button_round"
+        android:backgroundTint="#758652"
+        android:fontFamily="@font/suitemedium"
+
+        android:textColor="#FFFFFF"
+        android:textSize="24dp" />
+
+
+
+    <View
+        android:id="@+id/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/h_backbutton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/suitemedium"
+        android:text="알림"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+     <!-- 여기까지가 알림창 -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="알림 설정 "
+        android:textSize="18dp"
+        android:fontFamily="@font/suitemedium"
+        android:layout_marginLeft="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/Alarm"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp"
+        android:background="#FFFFFF"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="    전체 알림"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/suitemedium"
+            android:layout_marginTop="15dp"/>
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="15dp"
+            android:track="@drawable/h_switch_track_selector"
+            android:thumb="@drawable/h_switch_thumb"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="2px"
+            android:background="#D4D6DD"
+            android:layout_marginTop="60dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="    키워드 알림"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/suitemedium"
+            android:layout_marginTop="80dp"/>
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="80dp"
+            android:track="@drawable/h_switch_track_selector"
+            android:thumb="@drawable/h_switch_thumb"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="2px"
+            android:background="#D4D6DD"
+            android:layout_marginTop="125dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="    키워드 설정"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/suitemedium"
+            android:layout_marginTop="145dp"/>
+
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="145dp"
+            android:track="@drawable/h_switch_track_selector"
+            android:thumb="@drawable/h_switch_thumb"
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="2px"
+            android:background="#D4D6DD"
+            android:layout_marginTop="190dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="    댓글 알림"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/suitemedium"
+            android:layout_marginTop="210dp"/>
+
+        <Switch
+            android:id="@+id/switch4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="210dp"
+            android:track="@drawable/h_switch_track_selector"
+            android:thumb="@drawable/h_switch_thumb"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="2px"
+            android:background="#D4D6DD"
+            android:layout_marginTop="255dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="    투표 알림"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/suitemedium"
+            android:layout_marginTop="275dp"/>
+
+        <Switch
+            android:id="@+id/switch5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="275dp"
+            android:track="@drawable/h_switch_track_selector"
+            android:thumb="@drawable/h_switch_thumb"
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="2px"
+            android:background="#D4D6DD"
+            android:layout_marginTop="320dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="    방해금지 알림"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/suitemedium"
+            android:layout_marginTop="340dp"/>
+        <Switch
+            android:id="@+id/switch6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="340dp"
+            android:track="@drawable/h_switch_track_selector"
+            android:thumb="@drawable/h_switch_thumb"
+
+            />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

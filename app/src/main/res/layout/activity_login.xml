@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA"
+    tools:context=".LoginActivity">
+
+    <View
+        android:id="@+id/Action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:background="@drawable/h_button_round"
+        android:backgroundTint="#758652"
+        android:fontFamily="@font/suitemedium"
+
+        android:textColor="#FFFFFF"
+        android:textSize="24dp" />
+
+    <View
+        android:id="@+id/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/h_backbutton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/suitemedium"
+        android:text="ID로 로그인"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+
+
+    <LinearLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="110dp"
+        android:weightSum="100" >
+
+    <EditText
+        android:id="@+id/id_edit"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="35dp"
+        android:layout_weight="105"
+        android:background="@drawable/h_button_round"
+        android:hint="ID"
+        android:paddingStart="10dp"
+        android:backgroundTint="#DADADA"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/input_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="175dp"
+        android:weightSum="100" >
+
+        <EditText
+            android:id="@+id/password_edit"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="35dp"
+            android:layout_weight="105"
+            android:background="@drawable/h_button_round"
+            android:hint="비밀번호"
+            android:paddingStart="10dp"
+            android:backgroundTint="#DADADA"/>
+
+    </LinearLayout>
+
+
+
+    <CheckBox
+        android:id="@+id/autoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="240dp"
+        android:textSize="16dp"
+        android:text="자동 로그인" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/h_button_round"
+        android:text="로그인"
+        android:layout_marginTop="235dp"
+        android:layout_marginLeft="300dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#758652"/>
+
+
+</RelativeLayout>

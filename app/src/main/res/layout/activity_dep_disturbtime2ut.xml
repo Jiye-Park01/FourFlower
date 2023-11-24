@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dep3_disturbtime2ut">
+
+    <View
+        android:id="@+id/Action_bar_sd"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+
+        android:background="@drawable/h_button_round"
+        android:backgroundTint="#BCBBBB"
+        android:fontFamily="@font/suitemedium"
+        />
+
+
+
+    <View
+        android:id="@+id/Action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:background="@drawable/h_button_round"
+        android:backgroundTint="#758652"
+        android:fontFamily="@font/suitemedium"
+
+        android:textColor="#FFFFFF"
+        android:textSize="24dp" />
+
+
+
+    <View
+        android:id="@+id/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/h_backbutton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/suitemedium"
+        android:text="이웃의 방해금지 시간"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+    <!-- 여기까지 상단 바 -->
+
+    <View
+        android:id="@+id/box"
+        android:layout_width="340dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/h_box"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:text="텍스트 넣는 부분 "
+        android:textSize="20dp"
+        android:textColor="#000000"/>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginRight="20dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/h_button_round"/>
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/h_profile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000동"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/suitemedium"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00시~00시"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/suitemedium"
+                android:textSize="20dp"/>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="90dp"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/h_button_round"/>
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/h_profile" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000동"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="110dp"
+                android:fontFamily="@font/suitemedium"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00시~00시"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="110dp"
+                android:fontFamily="@font/suitemedium"
+                android:textSize="20dp"/>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="180dp"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/h_button_round"/>
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="190dp"
+                android:background="@drawable/h_profile" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000동"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="200dp"
+                android:fontFamily="@font/suitemedium"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00시~00시"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="200dp"
+                android:fontFamily="@font/suitemedium"
+                android:textSize="20dp"/>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="270dp"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/h_button_round"/>
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="280dp"
+                android:background="@drawable/h_profile" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000동"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="290dp"
+                android:fontFamily="@font/suitemedium"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00시~00시"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="290dp"
+                android:fontFamily="@font/suitemedium"
+                android:textSize="20dp"/>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="360dp"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/h_button_round"/>
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="370dp"
+                android:background="@drawable/h_profile" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000동"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="380dp"
+                android:fontFamily="@font/suitemedium"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00시~00시"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="380dp"
+                android:fontFamily="@font/suitemedium"
+                android:textSize="20dp"/>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

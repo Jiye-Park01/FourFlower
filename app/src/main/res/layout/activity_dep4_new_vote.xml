@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaeaea">
+
+    <!-- 상단 액션 바 -->
+    <View
+        android:id="@+id/Action_bar_sd"
+        style="@style/ActionBarStyle"
+        />
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/j_backbutton"
+        android:backgroundTint="#FFFFFF"
+        />
+
+    <!-- 메뉴 텍스트 -->
+    <TextView
+        style="@style/MenuTextStyle"
+        android:text="새 투표 등록하기"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="70dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/important"
+                style="@style/CustomCheckBoxStyle"
+                android:text="중요" />
+
+            <EditText
+                android:id="@+id/vote_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/j_edit_text_bacground"
+                android:gravity="center_horizontal"
+                android:hint="투표 제목 입력" />
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="32dp"
+                android:background="#C9C9C9" />
+
+            <EditText
+                android:id="@+id/vote_choice1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="16dp"
+
+                android:background="@drawable/j_edit_text_bacground"
+                android:gravity="center_horizontal"
+                android:hint="항목입력 1" />
+
+            <EditText
+                android:id="@+id/vote_choice2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="16dp"
+
+                android:background="@drawable/j_edit_text_bacground"
+                android:gravity="center_horizontal"
+                android:hint="항목입력 2" />
+
+            <Button
+                android:id="@+id/btn_add_choice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="16dp"
+
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/suitemedium"
+                android:gravity="center_horizontal"
+                android:text="+ 항목추가"
+                android:textColor="#C9C9C9"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/vote_deadline"
+
+                    style="@style/CustomCheckBoxStyle"
+                    android:text="종료 시간" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+
+                <Button
+                    android:id="@+id/btn_vote_deadline"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#FFFFFF"
+                    android:fontFamily="@font/suitemedium"
+
+                    android:text="2023.11.3(금)\n 12:00"
+                    android:textColor="#000000"
+                    android:textSize="8dp"
+
+
+                    />
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/multiple_choice"
+                style="@style/CustomCheckBoxStyle"
+                android:text="복수 선택" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#758652"
+        android:textSize="24dp"
+        android:fontFamily="@font/suitemedium"
+        android:text="등록하기" />
+</RelativeLayout>

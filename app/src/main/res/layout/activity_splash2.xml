@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+
+    tools:context=".Splash2">
+
+    <View
+        android:id="@+id/logo"
+        android:layout_width="485dp"
+        android:layout_height="485dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/h_logo"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="-12sp" />
+
+
+    <Button
+        android:id="@+id/NaverLogin"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="430dp"
+        android:background="@drawable/h_button_round"
+        android:backgroundTint="#758652"
+        android:fontFamily="@font/suitemedium"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="네이버로 로그인"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+
+
+
+    <!-- ID로 로그인 -->
+
+    <Button
+        android:id="@+id/IDLogin"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="530dp"
+        android:background="@drawable/h_button_round"
+        android:backgroundTint="#758652"
+        android:fontFamily="@font/suitemedium"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="ID로 로그인"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+
+
+
+
+    <!--회원가입 -->
+
+    <Button
+        android:id="@+id/SignUp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="630dp"
+        android:background="@drawable/h_button_round"
+        android:backgroundTint="#758652"
+        android:fontFamily="@font/suitemedium"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="회원가입"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+
+
+
+
+
+</RelativeLayout>

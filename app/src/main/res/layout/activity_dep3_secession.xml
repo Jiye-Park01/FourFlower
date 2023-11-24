@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa">
+
+    <!-- 상단 액션 바 -->
+    <View
+        android:id="@+id/Action_bar_sd"
+        style="@style/ActionBarStyle"
+        />
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/j_backbutton"
+        android:backgroundTint="#FFFFFF"
+        />
+
+    <!-- 메뉴 텍스트 -->
+    <TextView
+        style="@style/MenuTextStyle"
+        android:text="탈퇴하기"
+        />
+    <LinearLayout
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:orientation="vertical">
+        <TextView
+
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="@id/Action_bar_sd"
+            android:text="탈퇴 사유 작성"
+            android:fontFamily="@font/suitemedium"
+            android:textSize="16dp"/>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#C9C9C9" />
+
+        <EditText
+            android:id="@+id/secession_resion"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_horizontal"
+            android:hint="탈퇴 사유를 입력해주세요"
+            android:fontFamily="@font/suitemedium"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="@id/Action_bar_sd"
+            android:layout_marginTop="16dp"
+            android:text="비밀번호 입력"
+            android:fontFamily="@font/suitemedium"
+            android:textSize="16dp"/>
+        <EditText
+            android:id="@+id/input_psw"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/j_edit_text_bacground"
+            android:gravity="center"
+            android:backgroundTint="#c9c9c9"
+            android:hint="비밀번호" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#758652"
+        android:textSize="24dp"
+        android:fontFamily="@font/suitemedium"
+        android:text="탈퇴하기" />
+</RelativeLayout>

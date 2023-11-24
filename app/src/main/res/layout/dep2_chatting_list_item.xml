@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- chat_list_item.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/profileimage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/h_profile" />
+
+    <TextView
+        android:id="@+id/chatRoomTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:text="익명"
+        android:layout_marginTop="6dp"
+        android:textColor="#1F2024"
+        android:fontFamily="@font/suitemedium"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lastMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="64dp"
+        android:text="마지막 메시지 내용이 뜨는 부분 "
+        android:fontFamily="@font/suitemedium"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/chatrotn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/h_circle"
+        android:backgroundTint="#006FFD"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="328dp"
+        android:fontFamily="@font/suitemedium"
+        android:text="0" />
+</RelativeLayout>

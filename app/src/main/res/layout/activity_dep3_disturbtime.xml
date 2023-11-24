@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dep3_disturbtime"
+    android:background="#FAFAFA"
+    >
+
+    <View
+        android:id="@+id/Action_bar_sd"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+
+        android:background="@drawable/h_button_round"
+        android:backgroundTint="#BCBBBB"
+        android:fontFamily="@font/suitemedium"
+        />
+
+
+
+    <View
+        android:id="@+id/Action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:background="@drawable/h_button_round"
+        android:backgroundTint="#758652"
+        android:fontFamily="@font/suitemedium"
+
+        android:textColor="#FFFFFF"
+        android:textSize="24dp" />
+
+    <View
+        android:id="@+id/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/h_backbutton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/suitemedium"
+        android:text="방해 금지 시간 설정"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/h_disturbmoon" />
+
+    <RelativeLayout
+        android:id="@+id/Alarm"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="290dp"
+        android:backgroundTint="#FFFFFF"
+        android:background="@drawable/h_button_round"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="활성화"
+            android:textSize="20dp"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/suitemedium"
+            android:textColor="#000000" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:track="@drawable/h_switch_track_selector"
+            android:thumb="@drawable/h_switch_thumb"
+
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="425dp"
+        android:layout_marginLeft="50dp"
+        android:text="시간"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/suitemedium"
+        />
+    <RelativeLayout
+        android:id="@+id/Time"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="460dp"
+        android:backgroundTint="#FFFFFF"
+        android:background="@drawable/h_button_round">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="시작 시간"
+            android:textSize="20dp"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/suitemedium"
+            android:textColor="#000000" />
+        <Button
+            android:id="@+id/starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/h_switch_track_off"
+            android:layout_marginLeft="265dp"
+            android:layout_marginTop="16dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="종료 시간"
+            android:textSize="20dp"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/suitemedium"
+            android:textColor="#000000" />
+        <Button
+            android:id="@+id/endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/h_switch_track_off"
+            android:layout_marginLeft="265dp"
+            android:layout_marginTop="65dp"
+            />
+
+        <View
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:backgroundTint="#D9D9D9"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/h_circle"
+            android:layout_marginLeft="6dp"
+            />
+        <TextView
+            android:id="@+id/mon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="114dp"
+            android:text="월"
+            android:textSize="20dp"
+            android:layout_marginLeft="14dp"
+            android:fontFamily="@font/suitemedium"
+            android:textColor="#000000" />
+
+        <View
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:backgroundTint="#D9D9D9"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/h_circle"
+            android:layout_marginLeft="60dp"
+            />
+        <TextView
+            android:id="@+id/tues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="114dp"
+            android:text="화"
+            android:textSize="20dp"
+            android:layout_marginLeft="68dp"
+            android:fontFamily="@font/suitemedium"
+            android:textColor="#000000" />
+
+        <View
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:backgroundTint="#D9D9D9"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/h_circle"
+            android:layout_marginLeft="114dp"
+            />
+        <TextView
+            android:id="@+id/wen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="114dp"
+            android:text="수"
+            android:textSize="20dp"
+            android:layout_marginLeft="122dp"
+            android:fontFamily="@font/suitemedium"
+            android:textColor="#000000" />
+
+        <View
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:backgroundTint="#D9D9D9"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/h_circle"
+            android:layout_marginLeft="168dp"
+            />
+        <TextView
+            android:id="@+id/thurs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="114dp"
+            android:text="목"
+            android:textSize="20dp"
+            android:layout_marginLeft="176dp"
+            android:fontFamily="@font/suitemedium"
+            android:textColor="#000000" />
+
+        <View
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:backgroundTint="#D9D9D9"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/h_circle"
+            android:layout_marginLeft="222dp"
+            />
+        <TextView
+            android:id="@+id/fri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="114dp"
+            android:text="금"
+            android:textSize="20dp"
+            android:layout_marginLeft="230dp"
+            android:fontFamily="@font/suitemedium"
+            android:textColor="#000000" />
+
+        <View
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:backgroundTint="#D9D9D9"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/h_circle"
+            android:layout_marginLeft="276dp"
+            />
+        <TextView
+            android:id="@+id/sat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="114dp"
+            android:text="토"
+            android:textSize="20dp"
+            android:layout_marginLeft="284dp"
+            android:fontFamily="@font/suitemedium"
+            android:textColor="#000000" />
+
+        <View
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:backgroundTint="#D9D9D9"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/h_circle"
+            android:layout_marginLeft="330dp"
+            />
+        <TextView
+            android:id="@+id/sun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="114dp"
+            android:text="일"
+            android:textSize="20dp"
+            android:layout_marginLeft="338dp"
+            android:fontFamily="@font/suitemedium"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="636dp"
+        android:layout_marginLeft="50dp"
+        android:text="매일"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/suitemedium"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="666dp"
+        android:layout_marginLeft="50dp"
+        android:text="설정 삭제"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/suitemedium"
+        />
+
+</RelativeLayout>

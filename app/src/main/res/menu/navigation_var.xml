@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_menu"
+        android:enabled="true"
+        android:title="메뉴"
+        android:iconTint="#C9C9C9"
+        android:icon="@drawable/j_menu"/>
+
+    <item
+        android:id="@+id/item_board"
+        android:enabled="true"
+        android:title="게시판"
+        android:icon="@drawable/j_edit_note"/>
+
+    <item
+        android:id="@+id/item_home"
+        android:enabled="true"
+        android:title="홈"
+        android:icon="@drawable/j_home"
+        />
+    <item
+        android:id="@+id/item_chatting"
+        android:enabled="true"
+        android:title="채팅"
+        android:iconTint="#C9C9C9"
+        android:icon="@drawable/j_chatting"/>
+    <item
+        android:id="@+id/item_profile"
+        android:enabled="true"
+        android:title="마이페이지"
+        android:iconTint="#C9C9C9"
+        android:icon="@drawable/j_profile"/>
+
+</menu>
