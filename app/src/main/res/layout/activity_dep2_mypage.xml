@@ -99,7 +99,7 @@
         android:id="@+id/bio_scroll"
         android:layout_width="match_parent"
         android:layout_below="@id/lay"
-        android:layout_height="500dp"
+        android:layout_height="450dp"
         android:fillViewport="true"
         android:layout_marginBottom="0dp">
     <RelativeLayout

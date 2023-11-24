@@ -49,6 +49,13 @@
         android:theme="@style/Theme.FF_SDCI"
         tools:targetApi="31">
         <activity
+            android:name=".membership_idANDpassword"
+            android:theme="@style/AppTheme"
+            android:exported="false" />
+        <activity
+            android:name=".join_membership"
+            android:exported="false" />
+        <activity
             android:name=".Dep2.Dep2_Mypage"
             android:theme="@style/AppTheme"
             android:exported="false" />

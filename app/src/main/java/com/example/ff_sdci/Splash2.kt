@@ -19,5 +19,14 @@ class Splash2 : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // 회원가입 버튼을 클릭했을 때
+        val Signup=findViewById<Button>(R.id.SignUp)
+        Signup.setOnClickListener {
+            // 회원가입 버튼을 클릭했을 때 실행할 코드 작성
+            Toast.makeText(this,"회원가입 버튼 클릭", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, membership_idANDpassword::class.java)
+            startActivity(intent)
+        }
+
     }
 }
