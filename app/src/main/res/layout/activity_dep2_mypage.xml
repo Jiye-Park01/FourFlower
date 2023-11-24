@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dep2_Mypage">
+
+    <View
+        android:id="@+id/Action_bar_sd"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+
+        android:background="@drawable/h_button_round"
+        android:backgroundTint="#BCBBBB"
+        android:fontFamily="@font/suitemedium"
+        />
+
+
+
+    <View
+        android:id="@+id/Action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:background="@drawable/h_button_round"
+        android:backgroundTint="#758652"
+        android:fontFamily="@font/suitemedium"
+
+        android:textColor="#FFFFFF"
+        android:textSize="24dp" />
+
+
+
+    <View
+        android:id="@+id/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/h_backbutton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/suitemedium"
+        android:text="마이페이지"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lay"
+        android:layout_below="@+id/Action_bar_sd">
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jy_person_plus"
+            android:id="@+id/person"
+            android:layout_below="@id/some_id"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:text="닉네임 님"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_below="@id/some_id"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/address"
+                android:text="동아 아파트 101동 1203호"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_below="@id/name"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_1"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@+id/lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="내 정보"
+                android:textSize="24dp"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/suitemedium" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/profile"
+            android:layout_width="328dp"
+            android:layout_height="50dp"
+            android:background="@drawable/j_round_bottom"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_centerVertical="true"
+                android:text="프로필 관리"
+                android:textSize="20dp"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/suitemedium"
+                android:textColor="#000000" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/btn_profile"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/j_live_area"
+                android:backgroundTint="#BCBBBB" />
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/layout_1"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:orientation="vertical">
+
+        <!-- 방해금지 상단 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="나의 글"
+                android:textSize="24dp"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/suitemedium" />
+        </LinearLayout>
+
+        <!--방해금지시간설정-->
+        <LinearLayout
+            android:id="@+id/distrupt_1"
+            android:layout_width="328dp"
+            android:layout_height="50dp"
+            android:background="@drawable/j_round_bottom"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_centerVertical="true"
+                android:text="방해금지 시간 설정"
+                android:textSize="20dp"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/suitemedium"
+                android:textColor="#000000" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/btn_set_time"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/j_live_area"
+                android:backgroundTint="#BCBBBB" />
+
+        </LinearLayout>
+
+
+        <!--이웃의 방해금지시간-->
+        <LinearLayout
+            android:id="@+id/distrupt_2"
+            android:layout_width="328dp"
+            android:layout_height="50dp"
+            android:background="@drawable/j_round_bottom"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_centerVertical="true"
+                android:text="이웃의 방해금지 시간"
+                android:textSize="20dp"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/suitemedium"
+                android:textColor="#000000" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/btn_check_time"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/j_live_area"
+                android:backgroundTint="#BCBBBB" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

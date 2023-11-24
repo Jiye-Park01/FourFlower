@@ -1,9 +1,10 @@
-package com.example.ff_sdci
+package com.example.ff_sdci.Dep2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.ff_sdci.R
 import com.example.ff_sdci.R.id.dep2_chatRecycler
 
 class Dep2_Chatting : AppCompatActivity() {

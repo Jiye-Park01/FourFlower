@@ -65,7 +65,7 @@
     </LinearLayout>
     <!--서명-->
     <LinearLayout
-        android:id="@+id/vote2"
+        android:id="@+id/vote_2"
         android:layout_width="328dp"
         android:layout_height="50dp"
         android:orientation="horizontal"

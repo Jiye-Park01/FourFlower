@@ -51,6 +51,7 @@
         android:text="이웃의 방해금지 시간"
         android:textColor="#FFFFFF"
         android:textSize="30dp" />
+    <!-- 여기까지 상단 바 -->
 
     <View
         android:id="@+id/box"
