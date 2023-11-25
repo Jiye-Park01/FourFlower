@@ -40,7 +40,8 @@
             android:textSize="20dp" />
     </LinearLayout>
 
-    <ImageButton
+    <Button
+        android:id="@+id/button"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:background="@drawable/j_live_area"
