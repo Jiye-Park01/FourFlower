@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E7E1">
+    <View
+        android:id="@+id/Action_bar_sd"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/h_button_round"
+        android:backgroundTint="#BCBBBB"
+        android:fontFamily="@font/suitemedium"
+        />
+
+    <View
+        android:id="@+id/Action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/h_button_round"
+        android:backgroundTint="#758652"
+        android:fontFamily="@font/suitemedium"
+
+        android:textColor="#FFFFFF"
+        android:textSize="24dp" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:contentDescription="하고 싶은 설명"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/j_backbutton"
+        android:backgroundTint="#FFFFFF"
+        tools:ignore="TouchTargetSizeCheck" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/suitemedium"
+        android:text="인기 게시판"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+
+
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginRight="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textMyInfo1"
+                android:text="공지 게시판"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/board_recycler1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/j_button_round"
+                android:backgroundTint="#FFFFFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textMyInfo2"
+                android:text="인기 게시판"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/board_recycler2"
+                android:background="@drawable/j_button_round"
+                android:backgroundTint="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textMyInfo3"
+                android:text="장터 게시판"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/board_recycler3"
+                android:background="@drawable/j_button_round"
+                android:backgroundTint="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textMyInfo4"
+                android:text="홍보 게시판"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/board_recycler4"
+                android:background="@drawable/j_button_round"
+                android:backgroundTint="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textMyInfo5"
+                android:text="익명 게시판"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/board_recycler5"
+                android:background="@drawable/j_button_round"
+                android:backgroundTint="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textMyInfo6"
+                android:text="자유 게시판"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/board_recycler6"
+                android:layout_marginBottom="80dp"
+                android:background="@drawable/j_button_round"
+                android:backgroundTint="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </FrameLayout>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="start"
+            android:background="#FFFFFF"
+            app:itemIconTint="@drawable/j_menu_selector_color"
+            app:itemTextColor="@drawable/j_menu_selector_color"
+            app:labelVisibilityMode="unlabeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/bottom_navigation"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

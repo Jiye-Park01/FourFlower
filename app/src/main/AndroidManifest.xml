@@ -38,7 +38,6 @@
         android:required="false" />
 
     <application
-        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -48,19 +47,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FF_SDCI"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Dep2_boards"
+            android:exported="false"
+            android:label="@string/title_activity_dep2_boards"
+            android:theme="@style/Theme.FF_SDCI" />
+        <activity
             android:name=".membership_idANDpassword"
-            android:theme="@style/AppTheme"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".join_membership"
-            android:theme="@style/Theme.AppCompat"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".Dep2.Dep2_Mypage"
-            android:theme="@style/AppTheme"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".Dep2_Alarm"
             android:exported="false"
@@ -74,7 +79,8 @@
             android:theme="@style/AppTheme" />
         <activity
             android:name=".Dep4_write"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".Dep4_search_car"
             android:exported="false"
@@ -104,22 +110,22 @@
             android:name=".LoginActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat" />
-
-        <activity android:name="com.example.fourflower.scrap"
+        <activity
+            android:name="com.example.fourflower.scrap"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat"/>
+            android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".Dep2.Dep2_Chatting"
             android:exported="false"
             android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".Dep3_popularboard"
-            android:theme="@style/Theme.AppCompat"
-            android:exported="false" />
-        <activity android:name="com.example.fourflower.your_wrote"
-            android:theme="@style/Theme.AppCompat"
-            android:exported="false" />
-
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.example.fourflower.your_wrote"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".Splash2"
             android:exported="false"
@@ -134,9 +140,8 @@
             android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".Dep3_notice"
-            android:theme="@style/Theme.AppCompat"
-            android:exported="false" />
-
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".Dep_disturbtime2ut"
             android:exported="false"
@@ -147,15 +152,15 @@
             android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".Dep3_CustomerService"
-            android:theme="@style/Theme.AppCompat"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".Dep3_chatiing"
             android:exported="false" />
         <activity
             android:name=".Dep3_alarm"
-            android:theme="@style/Theme.AppCompat"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".Dep3_1on1ask"
             android:exported="false" />

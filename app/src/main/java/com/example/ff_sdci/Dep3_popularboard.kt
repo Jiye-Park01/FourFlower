@@ -9,15 +9,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import android.util.Log
 
-import android.widget.Button
 import android.widget.ImageView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> c0193440ad64dce0705d73ab988f31d58e74d094
 
     class Dep3_popularboard : AppCompatActivity() {
 

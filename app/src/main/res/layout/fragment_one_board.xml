@@ -64,13 +64,6 @@
             android:text="XXX"/>
         <ImageView
             android:id="@+id/bookmark"
-
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="100dp"
-            android:layout_marginLeft="110dp"
-            android:text="XXX"/>
-        <ImageView
             android:layout_width="15dp"
             android:layout_height="20dp"
             android:layout_marginTop="100dp"
