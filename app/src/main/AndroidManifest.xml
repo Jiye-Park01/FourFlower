@@ -136,6 +136,7 @@
             android:name=".Dep3_notice"
             android:theme="@style/Theme.AppCompat"
             android:exported="false" />
+
         <activity
             android:name=".Dep_disturbtime2ut"
             android:exported="false"

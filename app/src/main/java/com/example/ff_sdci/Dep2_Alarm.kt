@@ -1,10 +1,12 @@
 package com.example.ff_sdci
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 
 class Dep2_Alarm : AppCompatActivity(), View.OnClickListener {
 
@@ -21,6 +23,8 @@ class Dep2_Alarm : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dep2_alarm)
+
+
 
         // 위젯에 대한 참조
         bt_tab1 = findViewById(R.id.bt_all)
@@ -80,9 +84,3 @@ class Dep2_Alarm : AppCompatActivity(), View.OnClickListener {
     }
 }
 
-
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 8b4fedd53fc49db6c5b19e1ef64f93ad617df6df

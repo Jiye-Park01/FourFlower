@@ -34,6 +34,15 @@ class Dep2_Alarm_Frag1 : Fragment() {
         val adapter = OneAlarmAdapter(alarmList)
         boardRecycler.adapter = adapter
 
+        adapter.setItemClickListener(object: OneAlarmAdapter.OnItemClickListener{
+            override fun onClick(v: View, position: Int) {
+                // 개별 알림으로 가는 코드 작성
+                Toast.makeText(view.context,
+                    "${alarmList[position].categories}\n${alarmList[position].alarm_comments}",
+                    Toast.LENGTH_SHORT).show()
+            }
+        })
+
         return view
     }
 }

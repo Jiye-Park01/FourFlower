@@ -9,37 +9,52 @@ import androidx.recyclerview.widget.RecyclerView
 
 
 
-class OneAlarmAdapter (val itemList: ArrayList<OneAlarmView>) : RecyclerView.Adapter<OneAlarmAdapter.CustomViewHolder>(){
+class OneAlarmAdapter (val itemList: ArrayList<OneAlarmView>) : RecyclerView.Adapter<OneAlarmAdapter.CustomViewHolder>() {
 
+    private lateinit var itemClickListener: OnItemClickListener
 
+    // (1) 리스트 내 항목 클릭 시 onClick() 호출
+    interface OnItemClickListener {
+        fun onClick(view: View, position: Int)
+    }
 
-    override fun onCreateViewHolder(
-        parent: ViewGroup,
-        viewType: Int
-    ): OneAlarmAdapter.CustomViewHolder {
-        val view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_alarm, parent, false)
+    fun setItemClickListener(onItemClickListener: OnItemClickListener) {
+        this.itemClickListener = onItemClickListener
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CustomViewHolder {
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_alarm, parent, false)
         return CustomViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: CustomViewHolder, position: Int) {
-        holder.categories.text = itemList[position].categories
-        holder.alarm_comments.text = itemList[position].alarm_comments
-        holder.alarm_cotent.text = itemList[position].alarm_content
+        holder.bind(itemList[position])
+        holder.itemView.setOnClickListener {
+            itemClickListener.onClick(it, position)
+        }
     }
 
     override fun getItemCount(): Int {
-        return itemList.count()
+        return itemList.size
     }
 
-
-
-    class CustomViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class CustomViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val categories = itemView.findViewById<TextView>(R.id.category1)
         val alarm_comments = itemView.findViewById<TextView>(R.id.aram_comment1)
         val alarm_cotent = itemView.findViewById<TextView>(R.id.title_1)
-        }
 
+        fun bind(item: OneAlarmView) {
+            categories.text = item.categories
+            alarm_comments.text = item.alarm_comments
+            alarm_cotent.text = item.alarm_content
+        }
     }
+}
+
+
+
+
+
 
 
 

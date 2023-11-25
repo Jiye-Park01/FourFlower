@@ -13,6 +13,8 @@ import java.util.Date
 class OnePostViewAdapter (val itemList: ArrayList<OnePostView>) : RecyclerView.Adapter<OnePostViewAdapter.CustomViewHolder>(){
 
 
+
+
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -48,6 +50,8 @@ class OnePostViewAdapter (val itemList: ArrayList<OnePostView>) : RecyclerView.A
         val write_time = itemView.findViewById<TextView>(R.id.timeline)
         val bookmark = itemView.findViewById<ImageView>(R.id.bookmark)
         val post_image = itemView.findViewById<ImageView>(R.id.post_image)
+
+        val pos = adapterPosition
 
     }
 
