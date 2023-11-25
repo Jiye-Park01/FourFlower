@@ -14,7 +14,6 @@ import android.widget.ImageView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
-class Dep3_popularboard : AppCompatActivity() {
 
 
     class Dep3_popularboard : AppCompatActivity() {
@@ -77,4 +76,4 @@ class Dep3_popularboard : AppCompatActivity() {
             Log.d("TAG", "onCreate: After boardAdapter setup")
         }
     }
-}
+
