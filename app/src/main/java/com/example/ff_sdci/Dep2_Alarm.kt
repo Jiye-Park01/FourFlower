@@ -82,4 +82,7 @@ class Dep2_Alarm : AppCompatActivity(), View.OnClickListener {
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8b4fedd53fc49db6c5b19e1ef64f93ad617df6df
