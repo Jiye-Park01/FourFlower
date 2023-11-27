@@ -9,7 +9,9 @@ import android.widget.Toast
 import com.example.ff_sdci.Dep2.Dep2_Chatting
 import com.example.ff_sdci.Dep2.Dep2_Mypage
 import com.example.ff_sdci.Dep2.Dep2_menu
+
 import com.example.ff_sdci.notice_board
+
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class Dep1_Home : AppCompatActivity() {
@@ -31,8 +33,11 @@ class Dep1_Home : AppCompatActivity() {
                 // 게시판은 뭐가 잇는 게 업슨데..?
                 R.id.item_board -> {
                     // item_board를 클릭했을 때 게시판으로 이동
-                    val intent =Intent(this@Dep1_Home, notice_board::class.java)
+
                     startActivity(intent)
+                    val intent =Intent(this@Dep1_Home, Dep2_boards::class.java)
+                    startActivity(intent)
+
                     true
                 }
                 R.id.item_chatting -> {
