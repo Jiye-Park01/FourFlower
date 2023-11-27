@@ -87,7 +87,7 @@
                     android:id="@+id/menu1"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="20dp"
+                    android:layout_marginStart="10dp"
                     android:orientation="vertical">
                     <ImageButton
 
@@ -110,9 +110,10 @@
                 <View
                     android:layout_width="2dp"
                     android:layout_height="80dp"
+                    android:id="@+id/bar_1"
                     android:layout_marginTop="10dp"
                     android:layout_toEndOf="@id/menu1"
-                    android:layout_marginStart="16dp"
+                    android:layout_marginStart="10dp"
                     android:background="#C9C9C9" />
                 <LinearLayout
                     android:id="@+id/menu2"
@@ -120,6 +121,8 @@
                     android:layout_height="match_parent"
                     android:layout_centerVertical="true"
                     android:layout_centerHorizontal="true"
+                    android:layout_toEndOf="@id/bar_1"
+                    android:layout_marginStart="10dp"
                     android:orientation="vertical">
 
                     <ImageButton
@@ -127,7 +130,8 @@
                         android:id="@+id/park"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:layout_gravity="center"
+                        android:layout_toEndOf="@id/bar_1"
+                        android:layout_marginStart="10dp"
                         android:backgroundTint="#758652"
                         android:background="@drawable/j_car"
                         tools:ignore="SpeakableTextPresentCheck" />
@@ -144,8 +148,9 @@
                     android:layout_width="2dp"
                     android:layout_height="80dp"
                     android:layout_marginTop="10dp"
+                    android:id="@+id/bar_2"
                     android:layout_toEndOf="@id/menu2"
-                    android:layout_marginStart="16dp"
+                    android:layout_marginStart="10dp"
                     android:background="#C9C9C9" />
 
                 <LinearLayout
@@ -154,7 +159,8 @@
                     android:layout_height="match_parent"
                     android:layout_alignParentEnd="true"
                     android:layout_centerInParent="true"
-                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@id/bar_2"
+                    android:layout_marginStart="10dp"
                     android:orientation="vertical">
 
                     <ImageButton
@@ -162,7 +168,8 @@
                         android:contentDescription="하고 싶은 설명"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:layout_gravity="center"
+                        android:layout_toEndOf="@id/bar_1"
+                        android:layout_marginStart="10dp"
                         android:backgroundTint="#758652"
                         android:background="@drawable/j_vote" />
 

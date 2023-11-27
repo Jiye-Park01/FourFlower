@@ -10,12 +10,12 @@
 
     <View
         android:id="@+id/logo"
-        android:layout_width="485dp"
+        android:layout_width="380dp"
         android:layout_height="485dp"
-
+        android:layout_marginLeft="10dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="150dp"
+        android:layout_marginBottom="300dp"
         android:background="@drawable/h_logo"
         android:gravity="center_horizontal"
         android:lineSpacingExtra="-12sp" />
@@ -25,7 +25,7 @@
         android:id="@+id/NaverLogin"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_marginTop="430dp"
+        android:layout_marginTop="350dp"
         android:background="@drawable/h_button_round"
         android:backgroundTint="#758652"
         android:fontFamily="@font/suitemedium"
@@ -43,7 +43,7 @@
         android:id="@+id/IDLogin"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_marginTop="530dp"
+        android:layout_marginTop="430dp"
         android:background="@drawable/h_button_round"
         android:backgroundTint="#758652"
         android:fontFamily="@font/suitemedium"
@@ -62,7 +62,7 @@
         android:id="@+id/SignUp"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_marginTop="630dp"
+        android:layout_marginTop="510dp"
         android:background="@drawable/h_button_round"
         android:backgroundTint="#758652"
         android:fontFamily="@font/suitemedium"

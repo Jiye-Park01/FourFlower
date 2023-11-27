@@ -43,7 +43,7 @@
         android:layout_marginTop="13dp"
         android:layout_marginBottom="20dp"
         android:fontFamily="@font/suitemedium"
-        android:text="인기 게시판"
+        android:text="게시판"
         android:textColor="#FFFFFF"
         android:textSize="30dp" />
 

@@ -101,7 +101,7 @@
         android:background="@drawable/h_button_round"
         android:text="로그인"
         android:layout_marginTop="235dp"
-        android:layout_marginLeft="300dp"
+        android:layout_marginLeft="250dp"
         android:textColor="#FFFFFF"
         android:backgroundTint="#758652"/>
 
