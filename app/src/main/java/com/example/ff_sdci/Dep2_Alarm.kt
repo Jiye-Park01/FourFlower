@@ -1,14 +1,19 @@
 package com.example.ff_sdci
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 
 class Dep2_Alarm : AppCompatActivity(), View.OnClickListener {
 
     private val FRAGMENT1 = 1
     private val FRAGMENT2 = 2
+    private val FRAGMENT3 = 3
+    private val FRAGMENT4 = 4
 
     private lateinit var bt_tab1: Button
     private lateinit var bt_tab2: Button
@@ -18,6 +23,8 @@ class Dep2_Alarm : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dep2_alarm)
+
+
 
         // 위젯에 대한 참조
         bt_tab1 = findViewById(R.id.bt_all)
@@ -39,6 +46,8 @@ class Dep2_Alarm : AppCompatActivity(), View.OnClickListener {
         when (v.id) {
             R.id.bt_all -> callFragment(FRAGMENT1)
             R.id.bt_board -> callFragment(FRAGMENT2)
+            R.id.bt_vote -> callFragment(FRAGMENT3)
+            R.id.bt_distrupt -> callFragment(FRAGMENT4)
         }
     }
 
@@ -50,31 +59,28 @@ class Dep2_Alarm : AppCompatActivity(), View.OnClickListener {
             1 -> {
                 // '프래그먼트1' 호출
                 val fragment1 = Dep2_Alarm_Frag1()
-                transaction.replace(R.id.fragment_container, fragment1)
+                transaction.replace(R.id.fragment_container, Dep2_Alarm_Frag1())
                 transaction.commit()
             }
             2 -> {
                 // '프래그먼트2' 호출
                 val fragment2 = Dep2_Alarm_Frag2()
-                transaction.replace(R.id.fragment_container, fragment2)
+                transaction.replace(R.id.fragment_container, Dep2_Alarm_Frag2())
                 transaction.commit()
             }
             3 -> {
                 // '프래그먼트2' 호출
                 val fragment3 = Dep2_Alarm_Frag3()
-                transaction.replace(R.id.fragment_container, fragment3)
+                transaction.replace(R.id.fragment_container, Dep2_Alarm_Frag3())
                 transaction.commit()
             }
             4 -> {
                 // '프래그먼트2' 호출
                 val fragment4 = Dep2_Alarm_Frag4()
-                transaction.replace(R.id.fragment_container, fragment4)
+                transaction.replace(R.id.fragment_container, Dep2_Alarm_Frag4())
                 transaction.commit()
             }
         }
     }
 }
-
-
-
 

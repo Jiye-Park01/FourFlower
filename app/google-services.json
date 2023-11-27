@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "118485066218",
+    "project_id": "fourflower-6d5f2",
+    "storage_bucket": "fourflower-6d5f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118485066218:android:d8bbdbeba811c872621293",
+        "android_client_info": {
+          "package_name": "com.example.ff_sdci"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBucAGlAa3zCtRh37OfCXMhv8r61z25OTY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

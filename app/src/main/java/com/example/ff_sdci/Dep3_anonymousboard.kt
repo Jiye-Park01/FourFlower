@@ -13,16 +13,18 @@ import android.widget.Button
 import android.widget.ImageView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-class Dep3_popularboard : AppCompatActivity() {
+
+
+    class Dep3_anonymousboard : AppCompatActivity() {
 
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
-            setContentView(R.layout.activity_dep3_popularboard)
+            setContentView(R.layout.activity_dep3_anonymousboard)
 
 
             val writeButton: FloatingActionButton = findViewById(R.id.write_button)
             writeButton.setOnClickListener {
-                startActivity(Intent(this@Dep3_popularboard, Dep4_write::class.java))
+                startActivity(Intent(this@Dep3_anonymousboard, Dep4_write::class.java))
             }
 
             val back_button: ImageView = findViewById(R.id.back)

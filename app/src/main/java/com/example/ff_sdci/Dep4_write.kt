@@ -33,15 +33,6 @@ class Dep4_write : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dep4_write)
 
-        userid = intent.getStringExtra("userid") ?: ""
-
-        title_et = findViewById(R.id.title_et)
-        content_et = findViewById(R.id.content_et)
-        reg_button = findViewById(R.id.reg_button)
-        photo_button = findViewById(R.id.photo_button)
-
-
-
 
 
         reg_button.setOnClickListener {
