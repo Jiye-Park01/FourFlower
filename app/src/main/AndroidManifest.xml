@@ -161,6 +161,11 @@
             android:name=".Dep3_alarm"
             android:exported="false"
             android:theme="@style/Theme.AppCompat" />
+
+        <activity android:name=".board.Dep3_Noticeboard"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat"/>
+
         <activity
             android:name=".Dep3_1on1ask"
             android:exported="false" />

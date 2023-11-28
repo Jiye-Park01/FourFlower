@@ -9,8 +9,7 @@ import android.widget.Toast
 import com.example.ff_sdci.Dep2.Dep2_Chatting
 import com.example.ff_sdci.Dep2.Dep2_Mypage
 import com.example.ff_sdci.Dep2.Dep2_menu
-
-import com.example.ff_sdci.notice_board
+import com.example.ff_sdci.board.Dep3_Noticeboard
 
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -64,6 +63,12 @@ class Dep1_Home : AppCompatActivity() {
                 startActivity(intent)
             }
          // 방해금지모드 버튼을 눌렀을 때 방해금지모드 설정으로 이동
+            val DisturbButton= findViewById<ImageButton>(R.id.distrupt_button)
+            DisturbButton.setOnClickListener {
+                Toast.makeText(this,"방해금지 설정으로 이동",Toast.LENGTH_SHORT).show()
+                val intent= Intent(this,Dep3_disturbtime::class.java)
+                startActivity(intent)
+            }
 
         // 인기 게시판을 눌렀을 때 인기 게시판으로 이동
             val popularBoard=findViewById<RelativeLayout>(R.id.popular_board_)
@@ -74,8 +79,14 @@ class Dep1_Home : AppCompatActivity() {
 
             }
 
-
-
+            // 공지 게시판을 눌렀을 때 공지 게시판으로 이동
+            val noticeBoard= findViewById<RelativeLayout>(R.id.notice_boardc)
+            noticeBoard.setOnClickListener {
+                Toast.makeText(this,"공지 게시판으로 이동",Toast.LENGTH_SHORT).show()
+                val intent= Intent(this,
+                    Dep3_Noticeboard::class.java)
+                startActivity(intent)
+            }
 
 
     }
