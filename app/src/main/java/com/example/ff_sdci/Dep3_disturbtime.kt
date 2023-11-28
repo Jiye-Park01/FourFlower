@@ -10,6 +10,7 @@ import android.widget.Switch
 import android.widget.TextView
 import android.widget.TimePicker
 import androidx.appcompat.app.AppCompatActivity
+import com.example.ff_sdci.homefragment.MenuFragment
 import java.util.Calendar
 
 
@@ -45,7 +46,7 @@ class Dep3_disturbtime : AppCompatActivity() {
 
         val back_button: ImageView = findViewById(R.id.back)
         back_button.setOnClickListener {
-            val intent: Intent = Intent(this, Dep1_Home::class.java)
+            val intent: Intent = Intent(this, MenuFragment::class.java)
             startActivity(intent)
         }
 

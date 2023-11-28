@@ -11,7 +11,7 @@ class Dep3_chatiing : AppCompatActivity() {
         setContentView(R.layout.activity_dep3_chatiing)
         val back_button: ImageView = findViewById(R.id.back)
         back_button.setOnClickListener {
-            val intent: Intent = Intent(this, Dep1_Home::class.java)
+            val intent: Intent = Intent(this, ChattingFragment::class.java)
             startActivity(intent)
         }
     }

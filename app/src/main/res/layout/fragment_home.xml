@@ -77,7 +77,6 @@
                     />
             </RelativeLayout>
             <RelativeLayout
-                android:id="@+id/notice_boardc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp">
@@ -128,7 +127,7 @@
 
                     <ImageButton
                         android:contentDescription="하고 싶은 설명"
-                        android:id="@+id/park"
+                        android:id="@+id/park_button"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
                         android:layout_gravity="center"
@@ -162,7 +161,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
-                        android:id="@+id/vote"
+                        android:id="@+id/vote_button"
                         android:contentDescription="하고 싶은 설명"
                         android:layout_width="48dp"
                         android:layout_height="48dp"

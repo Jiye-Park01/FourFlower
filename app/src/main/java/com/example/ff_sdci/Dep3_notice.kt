@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.ListView
+import com.example.ff_sdci.homefragment.MypageFragment
 
 class Dep3_notice : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +14,7 @@ class Dep3_notice : AppCompatActivity() {
         setContentView(R.layout.activity_dep3_notice)
         val back_button: ImageView = findViewById(R.id.back)
         back_button.setOnClickListener {
-            val intent: Intent = Intent(this, Dep1_Home::class.java)
+            val intent: Intent = Intent(this, MypageFragment::class.java)
             startActivity(intent)
         }
 

@@ -81,6 +81,7 @@
                     android:layout_height="50dp">
 
                     <TextView
+                        android:id="@+id/set_distrupt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="7dp"
@@ -112,6 +113,7 @@
                     android:layout_height="50dp"
                     >
                     <TextView
+                        android:id="@+id/nei_distrupt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="7dp"
@@ -223,6 +225,7 @@
                     android:orientation="horizontal"
                     >
                     <TextView
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="7dp"

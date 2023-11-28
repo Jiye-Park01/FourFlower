@@ -99,6 +99,12 @@
                 android:fontFamily="@font/suitemedium"
                 android:layout_weight="1"
                 />
+            <ImageView
+                android:id="@+id/image_tv"
+                android:padding="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jy_dog"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -116,7 +122,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="16dp"
-                    android:text="100"
+                    android:text="0"
                     android:fontFamily="@font/suitemedium"
                     android:layout_weight="1"/>
 

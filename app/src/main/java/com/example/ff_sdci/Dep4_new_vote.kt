@@ -12,7 +12,7 @@ class Dep4_new_vote : AppCompatActivity() {
 
         val back_button: ImageView = findViewById(R.id.back)
         back_button.setOnClickListener {
-            val intent: Intent = Intent(this, Dep1_Home::class.java)
+            val intent: Intent = Intent(this, Dep3_ongoingvote::class.java)
             startActivity(intent)
         }
     }

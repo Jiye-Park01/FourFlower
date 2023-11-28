@@ -4,53 +4,43 @@ import android.app.Activity
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
-import android.view.View
-import android.widget.Button
-import android.widget.EditText
 import android.widget.ImageButton
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.AppCompatImageButton
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
-import java.io.BufferedReader
-import java.io.InputStreamReader
-import java.net.HttpURLConnection
-import java.net.URL
-import javax.net.ssl.HttpsURLConnection
-import java.text.SimpleDateFormat
-import java.util.*
 
 class Dep4_write : AppCompatActivity() {
 
-    private lateinit var title_et: EditText
-    private lateinit var content_et: EditText
-    private lateinit var photo_reg_button: ImageButton
-    private lateinit var selectedImageUri: Uri
-    private lateinit var storageReference: StorageReference
-    private lateinit var firestore: FirebaseFirestore
+    private lateinit var title_et: EditText // 제목 입력란
+    private lateinit var content_et: EditText // 내용 입력란
+    private lateinit var photo_reg_button: ImageButton // 사진 등록 버튼
+    private var selectedImageUri: Uri? = null // 선택된 이미지 URI
+    private lateinit var storageReference: StorageReference // Firebase Storage 참조
+    private lateinit var firestore: FirebaseFirestore // Firestore 데이터베이스
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dep4_write)
+
         val back_button: ImageView = findViewById(R.id.back)
         back_button.setOnClickListener {
-            val intent: Intent = Intent(this, Dep1_Home::class.java)
+            val intent = Intent(this, Dep3_popularboard::class.java)
             startActivity(intent)
         }
 
-        // Initialize Firebase Storage and Firestore
+        // Firebase Storage 및 Firestore 초기화
         storageReference = FirebaseStorage.getInstance().reference
         firestore = FirebaseFirestore.getInstance()
 
-        title_et = findViewById(R.id.title_et)
-        content_et = findViewById(R.id.content_et)
-        photo_reg_button = findViewById(R.id.photo_button)
+        title_et = findViewById(R.id.title_et) // 제목 입력란 참조
+        content_et = findViewById(R.id.content_et) // 내용 입력란 참조
+        photo_reg_button = findViewById(R.id.photo_button) // 사진 등록 버튼 참조
         photo_reg_button.setOnClickListener {
-            // Open gallery to select an image
+            // 갤러리 열기를 통해 이미지 선택
             val intent = Intent(Intent.ACTION_PICK)
             intent.type = "image/*"
             startActivityForResult(intent, PICK_IMAGE_REQUEST)
@@ -58,44 +48,77 @@ class Dep4_write : AppCompatActivity() {
 
         val reg_button = findViewById<ImageButton>(R.id.reg_button)
         reg_button.setOnClickListener {
-            // Get user input
+            // 사용자 입력 가져오기
             val title = title_et.text.toString()
             val content = content_et.text.toString()
 
-            // Save data to Firestore after image upload
-            val imagesRef = storageReference.child("images/${selectedImageUri.lastPathSegment}")
-            val uploadTask = imagesRef.putFile(selectedImageUri)
+            // 이미지가 선택되었는지 확인
+            if (selectedImageUri != null) {
+                // 이미지 업로드 후 Firestore에 데이터 저장
+                val imagesRef = storageReference.child("images/${selectedImageUri!!.lastPathSegment}")
+                val uploadTask = imagesRef.putFile(selectedImageUri!!)
 
-            uploadTask.continueWithTask { task ->
-                if (!task.isSuccessful) {
-                    task.exception?.let {
-                        throw it
+                uploadTask.continueWithTask { task ->
+                    if (!task.isSuccessful) {
+                        task.exception?.let {
+                            throw it
+                        }
+                    }
+                    imagesRef.downloadUrl
+                }.addOnCompleteListener { task ->
+                    if (task.isSuccessful) {
+                        val downloadUrl = task.result
+                        // 다운로드 URL을 포함하여 Firestore에 데이터 저장
+                        val docData = hashMapOf(
+                            "title" to title,
+                            "content" to content,
+                            "imageUrl" to downloadUrl.toString() // Firestore에 다운로드 URL 저장
+                        )
+
+                        firestore.collection("posts")
+                            .add(docData)
+                            .addOnSuccessListener { documentReference ->
+                                Toast.makeText(this, "등록되었습니다.", Toast.LENGTH_SHORT).show()
+
+                                // 등록된 글을 보여주는 Activity로 이동
+                                val intent = Intent(this, Dep4_my_post::class.java)
+                                intent.putExtra("postId", documentReference.id) // 보여줄 포스트 ID 전달
+                                startActivity(intent)
+
+                                finish()
+                            }
+                            .addOnFailureListener { e ->
+                                Toast.makeText(this, "등록에 실패했습니다: $e", Toast.LENGTH_SHORT).show()
+                            }
+                    } else {
+                        // 실패 처리
+                        Toast.makeText(this, "이미지 업로드 실패", Toast.LENGTH_SHORT).show()
                     }
                 }
-                imagesRef.downloadUrl
-            }.addOnCompleteListener { task ->
-                if (task.isSuccessful) {
-                    val downloadUrl = task.result
-                    // Save data to Firestore with downloadUrl
-                    val docData = hashMapOf(
-                        "title" to title,
-                        "content" to content,
-                        "imageUrl" to downloadUrl.toString() // Store download URL in Firestore
-                    )
+            } else {
+                // 이미지가 선택되지 않았을 때의 처리
+                // 이미지가 선택되지 않았을 때도 데이터를 저장
+                val docData = hashMapOf(
+                    "title" to title,
+                    "content" to content
+                    // 이미지가 없는 경우 여기에서 저장하지 않음
+                )
 
-                    firestore.collection("posts")
-                        .add(docData)
-                        .addOnSuccessListener {
-                            Toast.makeText(this, "등록되었습니다.", Toast.LENGTH_SHORT).show()
-                            finish()
-                        }
-                        .addOnFailureListener { e ->
-                            Toast.makeText(this, "등록에 실패했습니다: $e", Toast.LENGTH_SHORT).show()
-                        }
-                } else {
-                    // Handle failures
-                    Toast.makeText(this, "이미지 업로드 실패", Toast.LENGTH_SHORT).show()
-                }
+                firestore.collection("posts")
+                    .add(docData)
+                    .addOnSuccessListener { documentReference ->
+                        Toast.makeText(this, "등록되었습니다.", Toast.LENGTH_SHORT).show()
+
+                        // 등록된 글을 보여주는 Activity로 이동
+                        val intent = Intent(this, Dep4_my_post::class.java)
+                        intent.putExtra("postId", documentReference.id) // 보여줄 포스트 ID 전달
+                        startActivity(intent)
+
+                        finish()
+                    }
+                    .addOnFailureListener { e ->
+                        Toast.makeText(this, "등록에 실패했습니다: $e", Toast.LENGTH_SHORT).show()
+                    }
             }
         }
     }

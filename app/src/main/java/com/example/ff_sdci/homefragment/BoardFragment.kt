@@ -1,15 +1,21 @@
 package com.example.ff_sdci.homefragment
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.RelativeLayout
+import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.ff_sdci.Dep3_popularboard
 import com.example.ff_sdci.OneTitleView
 import com.example.ff_sdci.OneTitleViewAdapter
 import com.example.ff_sdci.R
+import com.example.ff_sdci.board.Dep3_Noticeboard
 
 class BoardFragment : Fragment() {
 
@@ -18,6 +24,7 @@ class BoardFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_board, container, false)
+
 
         val boardRecycler1: RecyclerView = view.findViewById(R.id.board_recycler1)
         val boardRecycler2: RecyclerView = view.findViewById(R.id.board_recycler2)
@@ -91,6 +98,54 @@ class BoardFragment : Fragment() {
         val boardAdapter6 = OneTitleViewAdapter(titleList6)
         boardRecycler6.adapter = boardAdapter6
         boardRecycler6.layoutManager = LinearLayoutManager(requireContext())
+
+        // 공지 게시판을 눌렀을 때 공지 게시판으로 이동
+        val noticeBoard = view.findViewById<TextView>(R.id.textMyInfo1)
+        noticeBoard.setOnClickListener {
+            Toast.makeText(requireContext(), "공지 게시판으로 이동", Toast.LENGTH_SHORT).show()
+            val intent = Intent(requireContext(), Dep3_Noticeboard::class.java)
+            startActivity(intent)
+        }
+        // 인기 게시판을 눌렀을 때 인기 게시판으로 이동
+        val popularBoard = view.findViewById<TextView>(R.id.textMyInfo2)
+        popularBoard.setOnClickListener {
+            Toast.makeText(requireContext(), "인기 게시판으로 이동", Toast.LENGTH_SHORT).show()
+            val intent = Intent(requireContext(), Dep3_popularboard::class.java)
+            startActivity(intent)
+        }
+        // 홍보 게시판을 눌렀을 때 공지 게시판으로 이동
+        val promotionBoard = view.findViewById<TextView>(R.id.textMyInfo3)
+        promotionBoard.setOnClickListener {
+            Toast.makeText(requireContext(), "공지 게시판으로 이동", Toast.LENGTH_SHORT).show()
+            val intent = Intent(requireContext(), Dep3_Noticeboard::class.java)
+            startActivity(intent)
+        }
+
+        // 장터 게시판을 눌렀을 때 공지 게시판으로 이동
+        val marketBoard = view.findViewById<TextView>(R.id.textMyInfo4)
+        marketBoard.setOnClickListener {
+            Toast.makeText(requireContext(), "공지 게시판으로 이동", Toast.LENGTH_SHORT).show()
+            val intent = Intent(requireContext(), Dep3_Noticeboard::class.java)
+            startActivity(intent)
+        }
+
+        // 익명 게시판을 눌렀을 때 공지 게시판으로 이동
+        val anonymousBoard = view.findViewById<TextView>(R.id.textMyInfo5)
+        anonymousBoard.setOnClickListener {
+            Toast.makeText(requireContext(), "공지 게시판으로 이동", Toast.LENGTH_SHORT).show()
+            val intent = Intent(requireContext(), Dep3_Noticeboard::class.java)
+            startActivity(intent)
+        }
+
+        // 자유 게시판을 눌렀을 때 공지 게시판으로 이동
+        val freeBoard = view.findViewById<TextView>(R.id.textMyInfo6)
+        freeBoard.setOnClickListener {
+            Toast.makeText(requireContext(), "공지 게시판으로 이동", Toast.LENGTH_SHORT).show()
+            val intent = Intent(requireContext(), Dep3_Noticeboard::class.java)
+            startActivity(intent)
+        }
+
+
 
         return view
     }

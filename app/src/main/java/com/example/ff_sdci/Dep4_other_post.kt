@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import com.example.ff_sdci.homefragment.BoardFragment
 
 class Dep4_other_post : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,7 +12,7 @@ class Dep4_other_post : AppCompatActivity() {
         setContentView(R.layout.activity_dep4_other_post)
         val back_button: ImageView = findViewById(R.id.back)
         back_button.setOnClickListener {
-            val intent: Intent = Intent(this, Dep1_Home::class.java)
+            val intent: Intent = Intent(this, BoardFragment::class.java)
             startActivity(intent)
         }
     }

@@ -27,7 +27,7 @@ class Dep2_Alarm : AppCompatActivity(), View.OnClickListener {
 
         val back_button: ImageView = findViewById(R.id.back)
         back_button.setOnClickListener {
-            val intent: Intent = Intent(this, Dep1_Home::class.java)
+            val intent: Intent = Intent(this, HomeFragment::class.java)
             startActivity(intent)
         }
 
