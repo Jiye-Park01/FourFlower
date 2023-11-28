@@ -9,6 +9,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatImageButton
@@ -35,6 +36,11 @@ class Dep4_write : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dep4_write)
+        val back_button: ImageView = findViewById(R.id.back)
+        back_button.setOnClickListener {
+            val intent: Intent = Intent(this, Dep1_Home::class.java)
+            startActivity(intent)
+        }
 
         // Initialize Firebase Storage and Firestore
         storageReference = FirebaseStorage.getInstance().reference

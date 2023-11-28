@@ -26,8 +26,16 @@
             android:textColor="#FFFFFF"
             android:textSize="25dp"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="54dp"
             />
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/j_backbutton"
+            android:backgroundTint="#FFFFFF" />
     </RelativeLayout>
     
 <!--    게시물-->
@@ -206,21 +214,6 @@
     </LinearLayout>
 
     <!--게시물 구분 바-->
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:background="@drawable/jy_line"
-        android:layout_below="@id/swrote"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"/>
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/jy_tab_bar" />
 
 </RelativeLayout>

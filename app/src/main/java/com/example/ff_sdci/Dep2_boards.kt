@@ -1,17 +1,65 @@
 package com.example.ff_sdci
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Adapter
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.ff_sdci.Dep2.Dep2_Chatting
+import com.example.ff_sdci.Dep2.Dep2_Mypage
+import com.example.ff_sdci.Dep2.Dep2_menu
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class Dep2_boards : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dep2_boards)
+
+        val back_button: ImageView = findViewById(R.id.back)
+        back_button.setOnClickListener {
+            val intent: Intent = Intent(this, Dep1_Home::class.java)
+            startActivity(intent)
+        }
+        val bottomNavigationView: BottomNavigationView = findViewById(R.id.navigation)
+
+        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.item_menu -> {
+                    // item_menu를 클릭했을 때 MenuActivity로 이동
+                    val intent = Intent(this@Dep2_boards, Dep2_menu::class.java)
+                    startActivity(intent)
+                    true
+                }
+                // 게시판은 뭐가 잇는 게 업슨데..?
+                R.id.item_profile -> {
+                    // item_profile를 클릭했을 때 마이페이지로 이동
+
+                    startActivity(intent)
+                    val intent =Intent(this@Dep2_boards, Dep2_Mypage::class.java)
+                    startActivity(intent)
+
+                    true
+                }
+                R.id.item_chatting -> {
+                    // item_chatting을 클릭했을 때 채팅으로 이동
+                    val intent =Intent(this@Dep2_boards, Dep2_Chatting::class.java)
+                    startActivity(intent)
+                    true
+                }
+                R.id.item_home -> {
+                    // item_menu를 클릭했을 때 마이페이지로 이동
+                    val intent =Intent(this@Dep2_boards, Dep1_Home::class.java)
+                    startActivity(intent)
+                    true
+                }
+                // 다른 항목에 대한 처리도 추가할 수 있습니다.
+                else -> false
+            }
+        }
 
         val boardRecycler1: RecyclerView = findViewById(R.id.board_recycler1)
         val boardRecycler2: RecyclerView = findViewById(R.id.board_recycler2)

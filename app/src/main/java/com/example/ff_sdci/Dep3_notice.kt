@@ -1,14 +1,21 @@
 package com.example.ff_sdci
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.ImageView
 import android.widget.ListView
 
 class Dep3_notice : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dep3_notice)
+        val back_button: ImageView = findViewById(R.id.back)
+        back_button.setOnClickListener {
+            val intent: Intent = Intent(this, Dep1_Home::class.java)
+            startActivity(intent)
+        }
 
         // notice_item과 notice를 연결해주는 코드
         val listView =findViewById<ListView>(R.id.listView)

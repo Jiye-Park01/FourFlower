@@ -21,6 +21,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
             setContentView(R.layout.activity_dep3_anonymousboard)
 
 
+
+
             val writeButton: FloatingActionButton = findViewById(R.id.write_button)
             writeButton.setOnClickListener {
                 startActivity(Intent(this@Dep3_anonymousboard, Dep4_write::class.java))
