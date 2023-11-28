@@ -22,6 +22,8 @@ class Dep2_Chatting : AppCompatActivity() {
             startActivity(intent)
         }
 
+
+
         val recyclerView=findViewById<RecyclerView>(dep2_chatRecycler)
         recyclerView.layoutManager=LinearLayoutManager(this)
 

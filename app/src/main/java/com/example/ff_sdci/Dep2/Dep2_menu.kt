@@ -1,11 +1,14 @@
 package com.example.ff_sdci.Dep2
 
 import android.content.Intent
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import android.widget.Toast
+import androidx.annotation.RequiresApi
+import androidx.core.content.ContextCompat
 import com.example.ff_sdci.Dep1_Home
 import com.example.ff_sdci.Dep2_boards
 import com.example.ff_sdci.Dep3_disturbtime
@@ -18,6 +21,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 // 메뉴.
 class Dep2_menu : AppCompatActivity() {
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dep2_menu)
@@ -29,6 +33,14 @@ class Dep2_menu : AppCompatActivity() {
         }
 
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.navigation)
+
+        val menu = bottomNavigationView.menu
+
+// 두 번째 아이템을 찾습니다.
+        val secondItem = menu.getItem(1)
+
+// 찾은 아이템의 아이콘 색상을 변경합니다.
+        secondItem.iconTintList = ContextCompat.getColorStateList(this, R.color.mainColor)
 
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {

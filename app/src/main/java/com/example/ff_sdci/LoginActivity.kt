@@ -73,7 +73,7 @@ class LoginActivity : AppCompatActivity() {
     // 유저정보 넘겨주고 메인 엑티비티 호출
     fun moveMainPage(user: FirebaseUser?) {
         if (user!=null) {
-            startActivity(Intent(this,Dep1_Home::class.java))
+            startActivity(Intent(this,NaviActivity::class.java))
             finish()
         }
     }

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homefragment.MenuFragment">
+
+    <RelativeLayout
+        android:background="#EAEAEA"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/Action_bar_sd"
+        style="@style/ActionBarStyle"
+        />
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/j_backbutton"
+        android:backgroundTint="#FFFFFF"
+        />
+
+    <!-- 메뉴 텍스트 -->
+    <TextView
+        style="@style/MenuTextStyle"
+        android:text="메뉴"
+        />
+
+    <!-- 방해금지 시간 레이아웃 -->
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical">
+
+            <!-- 방해금지 상단 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+
+                    android:background="@drawable/j_darkmode"
+                    android:backgroundTint="#758652"/>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="방해금지시간"
+                    android:textSize="24dp"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/suitemedium" />
+            </LinearLayout>
+
+            <!--방해금지시간설정-->
+            <LinearLayout
+                android:background="@drawable/h_button_round"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/distrupt_1"
+                    android:layout_width="328dp"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_centerVertical="true"
+                        android:text="방해금지 시간 설정"
+                        android:textSize="20dp"
+                        android:background="@drawable/h_button_round"
+                        android:layout_marginLeft="25dp"
+                        android:fontFamily="@font/suitemedium"
+                        android:textColor="#000000" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                    <Button
+                        android:id="@+id/btn_set_time"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/j_live_area"
+                        android:backgroundTint="#BCBBBB" />
+                </LinearLayout>
+
+
+                <!--이웃의 방해금지시간-->
+                <LinearLayout
+                    android:id="@+id/distrupt_2"
+                    android:layout_width="328dp"
+                    android:layout_height="50dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_centerVertical="true"
+                        android:text="이웃의 방해금지 시간"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:fontFamily="@font/suitemedium"
+                        android:textColor="#000000" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                    <Button
+                        android:id="@+id/btn_check_time"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/j_live_area"
+                        android:backgroundTint="#BCBBBB" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    <!-- 주차 레이아웃 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="250dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/j_car"
+                    android:backgroundTint="#758652"/>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="주차"
+                    android:textSize="24dp"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/suitemedium" />
+            </LinearLayout>
+
+            <!--차량등록-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/h_button_round">
+                <LinearLayout
+                    android:id="@+id/parking_1"
+                    android:layout_width="328dp"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerVertical="true"
+                        android:text="차량 등록"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:fontFamily="@font/suitemedium"
+                        android:textColor="#000000" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                    <Button
+                        android:id="@+id/btn_reg_car"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/j_live_area"
+                        android:backgroundTint="#BCBBBB" />
+                </LinearLayout>
+                <!--서명-->
+                <LinearLayout
+                    android:id="@+id/parking_2"
+                    android:layout_width="328dp"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_centerVertical="true"
+                        android:text="차량 검색"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:fontFamily="@font/suitemedium"
+                        android:textColor="#000000" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                    <Button
+                        android:id="@+id/btn_search_car"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/j_live_area"
+                        android:backgroundTint="#BCBBBB" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <!-- 전자투표 및 서명 레이아웃 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="400dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/j_vote"
+                    android:backgroundTint="#758652"/>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="전자투표 및 서명"
+                    android:textSize="24dp"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/suitemedium" />
+            </LinearLayout>
+
+            <!--전자투표-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:backgroundTint="#FFFFFF"
+                android:background="@drawable/h_button_round">
+                <LinearLayout
+                    android:id="@+id/vote_1"
+                    android:layout_width="328dp"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerVertical="true"
+                        android:text="전자 투표"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:fontFamily="@font/suitemedium"
+                        android:textColor="#000000" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                    <Button
+                        android:id="@+id/btn_elec_vote"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/j_live_area"
+                        android:backgroundTint="#BCBBBB" />
+                </LinearLayout>
+                <!--서명-->
+                <LinearLayout
+                    android:id="@+id/vote_2"
+                    android:layout_width="328dp"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_centerVertical="true"
+                        android:text="온라인 서명"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:fontFamily="@font/suitemedium"
+                        android:textColor="#000000" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                    <Button
+                        android:id="@+id/btn_signature"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/j_live_area"
+                        android:backgroundTint="#BCBBBB" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+

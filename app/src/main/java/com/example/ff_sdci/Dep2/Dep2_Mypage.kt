@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import com.example.ff_sdci.Dep1_Home
 import com.example.ff_sdci.Dep2_boards
 import com.example.ff_sdci.Dep3_CustomerService
@@ -31,9 +32,21 @@ class Dep2_Mypage : AppCompatActivity() {
             startActivity(intent)
         }
 
+        var selectedItem: Int = R.id.item_profile
+        if (savedInstanceState != null) {
+            selectedItem = savedInstanceState.getInt("selectedItem", R.id.item_home)
+        }
+
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.navigation)
 
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+            for (i in 0 until bottomNavigationView.menu.size()) {
+                bottomNavigationView.menu.getItem(i).icon?.setTint(ContextCompat.getColor(this, R.color.mainColor))
+            }
+
+            // 선택된 아이템의 색상 변경
+            item.icon?.setTint(ContextCompat.getColor(this, R.color.mainColor2))
+
             when (item.itemId) {
                 R.id.item_menu -> {
                     // item_menu를 클릭했을 때 MenuActivity로 이동

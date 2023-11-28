@@ -5,12 +5,16 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Adapter
 import android.widget.ImageView
+import android.widget.RelativeLayout
+import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ff_sdci.Dep2.Dep2_Chatting
 import com.example.ff_sdci.Dep2.Dep2_Mypage
 import com.example.ff_sdci.Dep2.Dep2_menu
+import com.example.ff_sdci.board.Dep3_Noticeboard
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class Dep2_boards : AppCompatActivity() {
@@ -19,14 +23,68 @@ class Dep2_boards : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dep2_boards)
 
+
+
         val back_button: ImageView = findViewById(R.id.back)
         back_button.setOnClickListener {
             val intent: Intent = Intent(this, Dep1_Home::class.java)
             startActivity(intent)
         }
-        val bottomNavigationView: BottomNavigationView = findViewById(R.id.navigation)
+
+        val noticeBoard = findViewById<TextView>(R.id.textMyInfo1)
+        noticeBoard.setOnClickListener {
+            Toast.makeText(this, "공지 게시판으로 이동", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, Dep3_Noticeboard::class.java)
+            startActivity(intent)
+        }
+
+        val PopularBoard = findViewById<TextView>(R.id.textMyInfo2)
+        PopularBoard.setOnClickListener {
+            Toast.makeText(this, "인기 게시판으로 이동", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, Dep3_popularboard::class.java)
+            startActivity(intent)
+        }
+
+        val marketBoard = findViewById<TextView>(R.id.textMyInfo3)
+        marketBoard.setOnClickListener {
+            Toast.makeText(this, "장터 게시판으로 이동", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, Dep3_marketboard::class.java)
+            startActivity(intent)
+        }
+
+        val promotionBoard = findViewById<TextView>(R.id.textMyInfo4)
+        promotionBoard.setOnClickListener {
+            Toast.makeText(this, "홍보 게시판으로 이동", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, Dep3_promotionboard::class.java)
+            startActivity(intent)
+        }
+        val anonymousboardBoard = findViewById<TextView>(R.id.textMyInfo5)
+        anonymousboardBoard.setOnClickListener {
+            Toast.makeText(this, "익명 게시판으로 이동", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, Dep3_anonymousboard::class.java)
+            startActivity(intent)
+        }
+
+        val freeBoard = findViewById<TextView>(R.id.textMyInfo6)
+        freeBoard.setOnClickListener {
+            Toast.makeText(this, "자유 게시판으로 이동", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, Dep3_freeboard::class.java)
+            startActivity(intent)
+        }
+
+
+        var bottomNavigationView: BottomNavigationView = findViewById(R.id.navigation)
+
+        //var selectedItem: Int = R.id.item_board
+       // if (savedInstanceState != null) {
+        //    selectedItem = savedInstanceState.getInt("selectedItem", R.id.item_home)
+        //}
+
 
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+            //bottomNavigationView.selectedItemId = selectedItem
+            //selectedItem = item.itemId
+
             when (item.itemId) {
                 R.id.item_menu -> {
                     // item_menu를 클릭했을 때 MenuActivity로 이동
@@ -34,7 +92,6 @@ class Dep2_boards : AppCompatActivity() {
                     startActivity(intent)
                     true
                 }
-                // 게시판은 뭐가 잇는 게 업슨데..?
                 R.id.item_profile -> {
                     // item_profile를 클릭했을 때 마이페이지로 이동
 
@@ -60,6 +117,8 @@ class Dep2_boards : AppCompatActivity() {
                 else -> false
             }
         }
+
+
 
         val boardRecycler1: RecyclerView = findViewById(R.id.board_recycler1)
         val boardRecycler2: RecyclerView = findViewById(R.id.board_recycler2)
@@ -140,5 +199,8 @@ class Dep2_boards : AppCompatActivity() {
         boardRecycler6.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
     }
+
+
+
 
 }
