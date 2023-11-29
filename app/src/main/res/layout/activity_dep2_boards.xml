@@ -71,10 +71,10 @@
                 android:id="@+id/textMyInfo1"
                 android:text="공지 게시판"
                 android:textColor="#000000"
-                android:textStyle="bold"
                 android:textSize="25dp"
+                android:fontFamily="@font/suitemedium"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp" />
+                 />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/board_recycler1"
@@ -89,10 +89,9 @@
                 android:id="@+id/textMyInfo2"
                 android:text="인기 게시판"
                 android:textColor="#000000"
-                android:textStyle="bold"
+                android:fontFamily="@font/suitemedium"
                 android:textSize="25dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp" />
+                android:layout_marginTop="10dp" />
 
             <androidx.recyclerview.widget.RecyclerView
                 xmlns:android="http://schemas.android.com/apk/res/android"
@@ -103,15 +102,14 @@
                 android:layout_height="match_parent"/>
 
             <TextView
+                android:id="@+id/textMyInfo3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textMyInfo3"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/suitemedium"
                 android:text="장터 게시판"
                 android:textColor="#000000"
-                android:textStyle="bold"
-                android:textSize="25dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp" />
+                android:textSize="25dp" />
 
             <androidx.recyclerview.widget.RecyclerView
                 xmlns:android="http://schemas.android.com/apk/res/android"
@@ -127,10 +125,10 @@
                 android:id="@+id/textMyInfo4"
                 android:text="홍보 게시판"
                 android:textColor="#000000"
-                android:textStyle="bold"
+                android:fontFamily="@font/suitemedium"
                 android:textSize="25dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp" />
+                 />
 
             <androidx.recyclerview.widget.RecyclerView
                 xmlns:android="http://schemas.android.com/apk/res/android"
@@ -146,10 +144,10 @@
                 android:id="@+id/textMyInfo5"
                 android:text="익명 게시판"
                 android:textColor="#000000"
-                android:textStyle="bold"
+                android:fontFamily="@font/suitemedium"
                 android:textSize="25dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp" />
+                />
 
             <androidx.recyclerview.widget.RecyclerView
                 xmlns:android="http://schemas.android.com/apk/res/android"
@@ -165,10 +163,10 @@
                 android:id="@+id/textMyInfo6"
                 android:text="자유 게시판"
                 android:textColor="#000000"
-                android:textStyle="bold"
+                android:fontFamily="@font/suitemedium"
                 android:textSize="25dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp" />
+                 />
 
             <androidx.recyclerview.widget.RecyclerView
                 xmlns:android="http://schemas.android.com/apk/res/android"
@@ -184,7 +182,6 @@
     </ScrollView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -194,7 +191,7 @@
             android:layout_height="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent" >
 
         </FrameLayout>
 
@@ -209,10 +206,12 @@
             app:itemTextColor="@drawable/j_menu_selector_color"
             app:labelVisibilityMode="unlabeled"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:menu="@menu/bottom_navigation"
+            app:menu="@menu/navigation_var"
             tools:layout_editor_absoluteX="0dp" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
 </RelativeLayout>

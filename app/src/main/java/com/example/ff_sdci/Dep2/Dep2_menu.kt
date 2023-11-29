@@ -1,22 +1,81 @@
 package com.example.ff_sdci.Dep2
 
 import android.content.Intent
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageView
 import android.widget.Toast
+import androidx.annotation.RequiresApi
+import androidx.core.content.ContextCompat
+import com.example.ff_sdci.Dep1_Home
+import com.example.ff_sdci.Dep2_boards
 import com.example.ff_sdci.Dep3_disturbtime
 import com.example.ff_sdci.Dep3_mycar
 import com.example.ff_sdci.Dep3_ongoingvote
 import com.example.ff_sdci.Dep4_search_car
 import com.example.ff_sdci.Dep_disturbtime2ut
 import com.example.ff_sdci.R
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 // 메뉴.
 class Dep2_menu : AppCompatActivity() {
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dep2_menu)
+
+        val back_button: ImageView = findViewById(R.id.back)
+        back_button.setOnClickListener {
+            val intent: Intent = Intent(this, Dep1_Home::class.java)
+            startActivity(intent)
+        }
+
+        val bottomNavigationView: BottomNavigationView = findViewById(R.id.navigation)
+
+        val menu = bottomNavigationView.menu
+
+// 두 번째 아이템을 찾습니다.
+        val secondItem = menu.getItem(1)
+
+// 찾은 아이템의 아이콘 색상을 변경합니다.
+        secondItem.iconTintList = ContextCompat.getColorStateList(this, R.color.mainColor)
+
+        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.item_profile -> {
+                    // item_profile을 클릭했을 때 마이페이지로 이동
+                    val intent = Intent(this@Dep2_menu, Dep1_Home::class.java)
+                    startActivity(intent)
+                    true
+                }
+                // 게시판은 뭐가 잇는 게 업슨데..?
+                R.id.item_board -> {
+                    // item_board를 클릭했을 때 게시판으로 이동
+
+                    startActivity(intent)
+                    val intent =Intent(this@Dep2_menu, Dep2_boards::class.java)
+                    startActivity(intent)
+
+                    true
+                }
+                R.id.item_chatting -> {
+                    // item_chatting을 클릭했을 때 채팅으로 이동
+                    val intent =Intent(this@Dep2_menu, Dep2_Chatting::class.java)
+                    startActivity(intent)
+                    true
+                }
+                R.id.item_home -> {
+                    // item_home를 클릭했을 때 홈으로 이동
+                    val intent =Intent(this@Dep2_menu, Dep1_Home::class.java)
+                    startActivity(intent)
+                    true
+                }
+                // 다른 항목에 대한 처리도 추가할 수 있습니다.
+                else -> false
+            }
+        }
 
         // 방해금지 시간
         // 1. 방해금지 시간 설정 창으로 넘어가기

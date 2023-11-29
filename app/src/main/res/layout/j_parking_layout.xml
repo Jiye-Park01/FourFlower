@@ -33,64 +33,71 @@
     </LinearLayout>
 
     <!--차량등록-->
+
     <LinearLayout
-        android:id="@+id/parking_1"
-        android:layout_width="328dp"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:background="@drawable/j_round_top">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:backgroundTint="#FFFFFF"
+        android:background="@drawable/h_button_round">
+        <LinearLayout
+            android:id="@+id/parking_1"
+            android:layout_width="328dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="17dp"
-            android:layout_centerVertical="true"
-            android:text="차량 등록"
-            android:textSize="20dp"
-            android:layout_marginLeft="25dp"
-            android:fontFamily="@font/suitemedium"
-            android:textColor="#000000" />
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
-        <Button
-            android:id="@+id/btn_reg_car"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginTop="7dp"
-            android:background="@drawable/j_live_area"
-            android:backgroundTint="#BCBBBB" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerVertical="true"
+                android:text="차량 등록"
+                android:textSize="20dp"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/suitemedium"
+                android:textColor="#000000" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/btn_reg_car"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/j_live_area"
+                android:backgroundTint="#BCBBBB" />
+        </LinearLayout>
+        <!--서명-->
+        <LinearLayout
+            android:id="@+id/parking_2"
+            android:layout_width="328dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_centerVertical="true"
+                android:text="차량 검색"
+                android:textSize="20dp"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/suitemedium"
+                android:textColor="#000000" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/btn_search_car"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/j_live_area"
+                android:backgroundTint="#BCBBBB" />
+        </LinearLayout>
     </LinearLayout>
-    <!--서명-->
-    <LinearLayout
-        android:id="@+id/parking_2"
-        android:layout_width="328dp"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:background="@drawable/j_round_bottom"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
-            android:layout_centerVertical="true"
-            android:text="차량 검색"
-            android:textSize="20dp"
-            android:layout_marginLeft="25dp"
-            android:fontFamily="@font/suitemedium"
-            android:textColor="#000000" />
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
-        <Button
-            android:id="@+id/btn_search_car"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginTop="7dp"
-            android:background="@drawable/j_live_area"
-            android:backgroundTint="#BCBBBB" />
-    </LinearLayout>
+
 </LinearLayout>

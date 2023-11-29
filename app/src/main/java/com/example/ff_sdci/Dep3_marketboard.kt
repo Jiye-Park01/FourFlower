@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import android.util.Log
 
 import android.widget.ImageView
+import com.example.ff_sdci.homefragment.BoardFragment
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
@@ -21,6 +22,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
             setContentView(R.layout.activity_dep3_marketboard)
 
 
+
+
             val writeButton: FloatingActionButton = findViewById(R.id.write_button)
             writeButton.setOnClickListener {
                 startActivity(Intent(this@Dep3_marketboard, Dep4_write::class.java))
@@ -28,7 +31,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 
             val back_button: ImageView = findViewById(R.id.back)
             back_button.setOnClickListener {
-                val intent: Intent = Intent(this, Dep1_Home::class.java)
+                val intent: Intent = Intent(this, BoardFragment::class.java)
                 startActivity(intent)
             }
 

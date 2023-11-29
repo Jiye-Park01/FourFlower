@@ -160,12 +160,12 @@
 
                     <ImageButton
                         android:id="@+id/vote"
-                        android:contentDescription="하고 싶은 설명"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
                         android:layout_gravity="center"
+                        android:background="@drawable/j_vote"
                         android:backgroundTint="#758652"
-                        android:background="@drawable/j_vote" />
+                        android:contentDescription="하고 싶은 설명" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -384,7 +384,7 @@
             app:itemTextColor="@drawable/j_menu_selector_color"
             app:labelVisibilityMode="unlabeled"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:menu="@menu/bottom_navigation"
+            app:menu="@menu/navigation_var"
             tools:layout_editor_absoluteX="0dp" />
 
 

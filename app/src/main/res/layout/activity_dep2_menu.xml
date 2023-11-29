@@ -52,7 +52,6 @@
         android:layout_marginTop="400dp" />
 
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -73,11 +72,12 @@
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_gravity="start"
+            android:background="#FFFFFF"
             app:itemIconTint="@drawable/j_menu_selector_color"
             app:itemTextColor="@drawable/j_menu_selector_color"
             app:labelVisibilityMode="unlabeled"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:menu="@menu/bottom_navigation"
+            app:menu="@menu/navigation_var"
             tools:layout_editor_absoluteX="0dp" />
 
 

@@ -1,11 +1,16 @@
 package com.example.ff_sdci.Dep2
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ff_sdci.DB.User
 import com.example.ff_sdci.DB.UserAdapter
+
+import com.example.ff_sdci.Dep1_Home
+import com.example.ff_sdci.Dep2_boards
 import com.example.ff_sdci.R
 import com.example.ff_sdci.R.id.dep2_chatRecycler
 import com.example.ff_sdci.databinding.ActivityDep2ChattingBinding
@@ -38,8 +43,18 @@ class Dep2_Chatting : AppCompatActivity() {
         binding = ActivityDep2ChattingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
         // 인증 초기화
         mAuth = Firebase.auth
+
+        val back_button: ImageView = findViewById(R.id.back)
+        back_button.setOnClickListener {
+            val intent: Intent = Intent(this, Dep1_Home::class.java)
+            startActivity(intent)
+        }
+
+
+
 
         // db 초기화
         mDbRef = Firebase.database.reference

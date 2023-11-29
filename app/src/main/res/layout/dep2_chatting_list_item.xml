@@ -31,21 +31,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="64dp"
-        android:text="마지막 메시지 내용이 뜨는 부분 "
+
         android:textColor="#000000"
         android:fontFamily="@font/suitemedium"
         android:textSize="16sp" />
 
-    <Button
-        android:id="@+id/chatrotn"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:background="@drawable/h_circle"
-        android:backgroundTint="#006FFD"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="328dp"
-        android:fontFamily="@font/suitemedium"
-        android:text="0" />
+
 
     <View
         android:layout_width="match_parent"
@@ -54,3 +45,15 @@
         android:background="#000000"
         android:layout_marginTop="18dp"/>
 </RelativeLayout>
+
+<!--
+ <Button
+        android:id="@+id/chatrotn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/h_circle"
+        android:backgroundTint="#006FFD"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="328dp"
+        android:fontFamily="@font/suitemedium"
+        android:text="0" /> -->

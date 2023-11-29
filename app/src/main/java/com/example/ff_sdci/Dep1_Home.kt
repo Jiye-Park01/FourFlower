@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
+import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.Toast
 import com.example.ff_sdci.Dep2.Dep2_Chatting
@@ -85,6 +86,14 @@ class Dep1_Home : AppCompatActivity() {
                 Toast.makeText(this,"공지 게시판으로 이동",Toast.LENGTH_SHORT).show()
                 val intent= Intent(this,
                     Dep3_Noticeboard::class.java)
+                startActivity(intent)
+            }
+        // 전자투표 및 서명을 눌렀을 때 전자투표로 이동
+
+            val onlinevote=findViewById<LinearLayout>(R.id.menu3)
+            onlinevote.setOnClickListener {
+                Toast.makeText(this,"전자투표 및 서명으로 이동",Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, Dep3_ongoingvote::class.java)
                 startActivity(intent)
             }
 

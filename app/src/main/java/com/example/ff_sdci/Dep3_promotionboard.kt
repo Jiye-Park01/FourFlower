@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import android.util.Log
 
 import android.widget.ImageView
+import com.example.ff_sdci.homefragment.BoardFragment
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
@@ -28,7 +29,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 
             val back_button: ImageView = findViewById(R.id.back)
             back_button.setOnClickListener {
-                val intent: Intent = Intent(this, Dep1_Home::class.java)
+                val intent: Intent = Intent(this, BoardFragment::class.java)
                 startActivity(intent)
             }
 

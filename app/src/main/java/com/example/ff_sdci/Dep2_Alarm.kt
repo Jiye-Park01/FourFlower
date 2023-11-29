@@ -20,9 +20,16 @@ class Dep2_Alarm : AppCompatActivity(), View.OnClickListener {
     private lateinit var bt_tab3: Button
     private lateinit var bt_tab4: Button
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dep2_alarm)
+
+        val back_button: ImageView = findViewById(R.id.back)
+        back_button.setOnClickListener {
+            val intent: Intent = Intent(this, HomeFragment::class.java)
+            startActivity(intent)
+        }
 
 
 

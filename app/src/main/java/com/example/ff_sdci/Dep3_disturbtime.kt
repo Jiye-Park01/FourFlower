@@ -1,13 +1,16 @@
 package com.example.ff_sdci
 
 import android.app.TimePickerDialog
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.Switch
 import android.widget.TextView
 import android.widget.TimePicker
 import androidx.appcompat.app.AppCompatActivity
+import com.example.ff_sdci.homefragment.MenuFragment
 import java.util.Calendar
 
 
@@ -40,6 +43,12 @@ class Dep3_disturbtime : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dep3_disturbtime)
+
+        val back_button: ImageView = findViewById(R.id.back)
+        back_button.setOnClickListener {
+            val intent: Intent = Intent(this, MenuFragment::class.java)
+            startActivity(intent)
+        }
 
         disturbSwitch = findViewById(R.id.switch1)
         startTimeButton = findViewById(R.id.starttime)
