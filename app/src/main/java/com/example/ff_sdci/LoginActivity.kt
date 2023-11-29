@@ -11,6 +11,8 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import com.example.ff_sdci.databinding.ActivityDep1HomeBinding
+import com.example.ff_sdci.databinding.ActivityLoginBinding
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -30,51 +32,54 @@ import retrofit2.http.POST
 
 
 class LoginActivity : AppCompatActivity() {
-    private var auth: FirebaseAuth? = null
+    lateinit var binding: ActivityLoginBinding // 추가
+    lateinit var mAuth : FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        auth = Firebase.auth
-        setContentView(R.layout.activity_login)
+        binding=ActivityLoginBinding.inflate(layoutInflater) //추가
+        setContentView(binding.root)
+
+        // 인증 초기화
+        mAuth= Firebase.auth
 
 
-        val BackButton=findViewById<View>(R.id.back)
-        val loginButton=findViewById<Button>(R.id.loginButton)
 
-        val emailEditText = findViewById<EditText>(R.id.id_edit)
-        val passwordEditText = findViewById<EditText>(R.id.password_edit)
-        BackButton.setOnClickListener {
-            // 버튼이 클릭되었을 때 실행할 코드 작성
-            Toast.makeText(this,"뒤로가기 버튼", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, Splash2::class.java)
-            startActivity(intent)
+        // 로그인 버튼 이벤트
+        binding.loginButton.setOnClickListener {
+            val email=binding.idEdit.text.toString()
+            val password= binding.passwordEdit.text.toString()
+
+            login(email,password)
         }
-        // 로그인 버튼 임시 처리 코드
-        loginButton.setOnClickListener {
-            // 로그인 버튼이 클릭되었을 때
-            Toast.makeText(this,"로그인 버튼 클릭, 수정해야함", Toast.LENGTH_SHORT).show()
-            signIn(emailEditText.text.toString(), passwordEditText.text.toString())
-        }
+
+
+
     }
 
-    private fun signIn (id_edit:String, password_edit: String) {
-        if (id_edit.isNotEmpty() && password_edit.isNotEmpty()) {
-            auth?.signInWithEmailAndPassword(id_edit,password_edit)?.addOnCompleteListener(this) {task->
+    /**
+     * 로그인 기능
+     */
+
+    private fun login(email:String, password:String) {
+        mAuth.signInWithEmailAndPassword(email, password)
+            .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    Toast.makeText(baseContext, "로그인에 성공하였습니다.", Toast.LENGTH_SHORT).show()
-                    moveMainPage(auth?.currentUser)
+                   // 성공 시 실팽
+                    val intent= Intent(this@LoginActivity, Dep1_Home::class.java)
+
+                    startActivity(intent)
+                    Toast.makeText(this,"로그인 성공",Toast.LENGTH_SHORT).show()
+                    finish()
                 } else {
-                    Toast.makeText(baseContext, "로그인에 실패하였습니다.", Toast.LENGTH_SHORT).show()
+                    // 실패 시 실행
+                    Toast.makeText(this,"로그인 실패",Toast.LENGTH_SHORT).show()
+                    Log.d("Login", "Error:${task.exception}")
+
+
                 }
             }
-        }
+
     }
 
-    // 유저정보 넘겨주고 메인 엑티비티 호출
-    fun moveMainPage(user: FirebaseUser?) {
-        if (user!=null) {
-            startActivity(Intent(this,Dep1_Home::class.java))
-            finish()
-        }
-    }
 }

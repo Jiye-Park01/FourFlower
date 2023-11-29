@@ -50,6 +50,9 @@ android {
     viewBinding {
         enabled true
     }
+    buildFeatures {
+        viewBinding= true
+    }
 }
 
 dependencies {
@@ -102,4 +105,5 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
 
     implementation 'com.google.firebase:firebase-database:20.3.0'
+    implementation ('com.google.firebase:firebase-database-ktx')
 }

@@ -155,7 +155,7 @@
             android:exported="false"
             android:theme="@style/Theme.AppCompat" />
         <activity
-            android:name=".Dep3_chatiing"
+            android:name=".Dep3.Dep3_chatiing"
             android:exported="false" />
         <activity
             android:name=".Dep3_alarm"

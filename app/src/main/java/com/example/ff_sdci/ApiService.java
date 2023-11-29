@@ -1,9 +1,9 @@
 package com.example.ff_sdci;
 
-import java.util.List;
+import com.example.ff_sdci.DB.User;
+
 import retrofit2.Call;
 import retrofit2.http.Body;
-import retrofit2.http.GET;
 import retrofit2.http.POST;
 
 

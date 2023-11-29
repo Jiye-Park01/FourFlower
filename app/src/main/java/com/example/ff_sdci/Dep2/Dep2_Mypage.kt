@@ -6,21 +6,107 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.Toast
+import com.example.ff_sdci.DB.User
+//import com.example.ff_sdci.DB.UserAdapter
 import com.example.ff_sdci.Dep3_CustomerService
 import com.example.ff_sdci.Dep3_alarm
 import com.example.ff_sdci.Dep3_notice
 import com.example.ff_sdci.LoginActivity
 import com.example.ff_sdci.R
 import com.example.ff_sdci.R.id.my_write
+import com.example.ff_sdci.databinding.ActivityDep2MypageBinding
 import com.example.fourflower.ProfillSet
 import com.example.fourflower.scrap
 import com.example.fourflower.your_wrote
+import com.google.firebase.Firebase
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.auth
+import com.google.firebase.database.ChildEventListener
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.database
+
+// DatabaseReference를 확장하는 addChildEventListener 함수 정의
+fun DatabaseReference.addChildEventListener(valueEventListener: ChildEventListener) {
+    this.addChildEventListener(valueEventListener)
+}
 
 class Dep2_Mypage : AppCompatActivity() {
+
+        lateinit var binding: ActivityDep2MypageBinding
+       // lateinit var adapter: UserAdapter
+
+        private lateinit var mAuth: FirebaseAuth
+        private lateinit var mDbRef: DatabaseReference // 데이터베이스 인증 서비스 객체
+
+        private lateinit var userList: ArrayList<User> //데이터를 담을 유저리스트
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_dep2_mypage)
+        binding=ActivityDep2MypageBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        // 인증 초기화
+         mAuth= Firebase.auth
+        // db 초기화
+        mDbRef= Firebase.database.reference
 
+        // 리스트 초기화
+        userList= ArrayList()
+
+        // 어댑터 초기화
+        //adapter= UserAdapter(this,userList)
+        // 현재 로그인한 사용자 정보 가져오기
+        val currentUser = mAuth.currentUser
+        // db 에서 사용자 정보 갖고 오기
+        // db에서 사용자 정보 갖고 오기
+        // db에서 사용자 정보 갖고 오기
+        mDbRef.child("user").addChildEventListener(object : ChildEventListener {
+            override fun onChildAdded(snapshot: DataSnapshot, previousChildName: String?) {
+                // 데이터가 추가되었을 때
+                val currentUser = snapshot.getValue(User::class.java)
+                if (currentUser != null) {
+                    userList.add(currentUser)
+                    //adapter.notifyDataSetChanged()
+
+                    // 닉네임을 사용하여 뷰 업데이트
+                    updateNickname(currentUser.name)
+                }
+            }
+
+            override fun onChildChanged(snapshot: DataSnapshot, previousChildName: String?) {
+                // 데이터가 변경되었을 때
+                val updatedUser = snapshot.getValue(User::class.java)
+                if (updatedUser != null) {
+                    // 사용자 정보가 변경되었을 때 어댑터를 다시 설정하고, 뷰 업데이트
+                    userList.clear()
+                    userList.add(updatedUser)
+                    //adapter.notifyDataSetChanged()
+                    updateNickname(updatedUser.name)
+                }
+            }
+
+            override fun onChildRemoved(snapshot: DataSnapshot) {
+                // 데이터가 삭제되었을 때
+                // 삭제된 사용자를 어댑터에서 제거하고, 뷰 업데이트
+                val removedUser = snapshot.getValue(User::class.java)
+                if (removedUser != null) {
+                    userList.remove(removedUser)
+                    //adapter.notifyDataSetChanged()
+                    // 여기에서는 닉네임 업데이트가 필요하지 않을 수 있습니다.
+                }
+            }
+
+            override fun onChildMoved(snapshot: DataSnapshot, previousChildName: String?) {
+                // 데이터가 이동되었을 때
+                // 이동된 데이터에 대한 처리를 추가할 수 있습니다.
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                // 캔슬됐을 때, 실패했을 때 어떻게 실행할건지
+            }
+        })
         // 내 정보
         // 프로필 관리 누르면 프로필로 넘어감
 
@@ -73,5 +159,11 @@ class Dep2_Mypage : AppCompatActivity() {
         }
 
 
+    }
+
+    private fun updateNickname(nickname: String) {
+        // 닉네임을 사용하여 뷰 업데이트 로직을 작성
+        // 예: binding.nicknameTextView.text = nickname
+        binding.nameText.text= nickname
     }
 }

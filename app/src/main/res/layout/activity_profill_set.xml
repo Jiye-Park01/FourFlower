@@ -53,7 +53,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/name"
+                android:id="@+id/name_text"
                 android:text="닉네임 님"
                 android:textColor="#000000"
                 android:textSize="20dp"
@@ -68,7 +68,7 @@
                 android:text="동아 아파트 101동 1203호"
                 android:textColor="#000000"
                 android:textSize="20dp"
-                android:layout_below="@id/name"
+                android:layout_below="@id/name_text"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="20dp"
                 />
@@ -98,6 +98,7 @@
             android:background="@drawable/jy_message_bub">
             <!--            입력칸은 id 안줬습니다.-->
             <TextView
+                android:id="@+id/emailtext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="jiye0710"
